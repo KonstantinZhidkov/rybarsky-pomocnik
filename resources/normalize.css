@@ -349,3 +349,50 @@ template {
 [hidden] {
   display: none;
 }
+
+/* CSS properties added by me */
+
+button {
+  border-width: 0;
+  padding: 0;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+ol,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+fieldset {
+  border-width: 0;
+  margin: 0;
+}
+
+/* Remove default margin */
+p,
+ul[class],
+ol[class],
+figure,
+blockquote {
+  margin: 0;
+}
