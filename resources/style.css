@@ -1,3 +1,27 @@
+@font-face {
+	font-family: 'Courgette';
+	src: url('./fonts/Courgette-Regular.eot');
+	src: local('☺'), url('./fonts/Courgette-Regular.woff') format('woff'), url('./fonts/Courgette-Regular.ttf') format('truetype'), url('./fonts/Courgette-Regular.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SourceCodePro';
+	src: url('./fonts/SourceCodePro-Bold.eot');
+	src: local('☺'), url('./fonts/SourceCodePro-Bold.woff') format('woff'), url('./fonts/SourceCodePro-Bold.ttf') format('truetype'), url('./fonts/SourceCodePro-Bold.svg') format('svg');
+  font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Righteous';
+	src: url('./fonts/Righteous.eot');
+	src: local('☺'), url('./fonts/Righteous.woff') format('woff'), url('./fonts/Righteous.ttf') format('truetype'), url('./fonts/Righteous.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
 /* Default settings */
 *,
 *::before,
@@ -16,6 +40,8 @@ body {
   width: 100%;
   background: url("./images/background-images/rybar-na-lodi.jpg") 50% 50% / cover no-repeat;
 }
+
+/* Navigace */
 
 .header {
   width: 100%;
@@ -41,11 +67,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* height: 70px; */
+  height: 90px;
+  /* transition: 0.6s; */
 }
 
 .header__logo {
   overflow: hidden;
+  margin: 0px 0px 0px 25px;
 }
 
 .logo__image {
@@ -60,20 +88,13 @@ body {
 
 .header__item {
   list-style: none;
-  margin: 0px 0px 0px 30px;
+  margin: 0px 45px 0px 0px;
 }
 
 .header__link {
   text-decoration: none;
-  font-size: 1.5em;
+  font-family: "Righteous", sans-serif;
+  font-size: 1.6em;
+  letter-spacing: 0.1em;
+  color: #443726;
 }
-/* nav.navigation {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: 0.6s;
-} */
