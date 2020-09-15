@@ -51,7 +51,7 @@ body {
   z-index: 20;
 }
 
-/* .header::before {
+.header::before {
   content: '';
   position: absolute;
   top: 0;
@@ -59,11 +59,11 @@ body {
   width: 100%;
   height: 100%;
   background-color: #5e5373;
-} */
+  z-index: 2;
+}
 
 .header__body {
   position: relative;
-  z-index: 2;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -74,6 +74,8 @@ body {
 .header__logo {
   overflow: hidden;
   margin: 0px 0px 0px 25px;
+  position: relative;
+  z-index: 3;
 }
 
 .logo__image {
@@ -84,6 +86,8 @@ body {
 
 .header__list {
   display: flex;
+  position: relative;
+  z-index: 2;
 }
 
 .header__item {
@@ -97,4 +101,116 @@ body {
   font-size: 1.6em;
   letter-spacing: 0.1em;
   color: #443726;
+}
+
+.header__toggle {
+  display: none;
+}
+
+/* Navigace pro mobilní zařízení */
+
+@media only screen and (max-width: 1119px) {
+  .header__body {
+    height: 80px;
+  }
+
+  .logo__image {
+    height: 60px;
+  }
+
+  .header__item {
+    margin: 0px 35px 0px 0px;
+  }
+
+  .header__link {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  .header__logo {
+    margin-right: 20px;
+    flex-shrink: 1;
+  }
+
+  .header__list {
+    text-align: center;
+  }
+
+  .header__navigation {
+    flex-shrink: 2;
+  }
+
+  .header__item {
+    margin: 0px 25px 0px 0px;
+  }
+
+  .header__link {
+    font-size: 1.3em;
+  }
+}
+
+/* Navigace burger pro mobilní zařízení */
+
+@media only screen and (max-width: 767px) {
+  .header__body {
+    height: 60px;
+  }
+
+  .logo__image {
+    height: 40px;
+  }
+
+  .header__toggle {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 3;
+  }
+
+  .header__burger {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    left: 0;
+    height: 2px;
+    top: 9px;
+  }
+
+  .header__toggle::before,
+  .header__toggle::after {
+    content: '';
+    background-color: #ffffff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+  }
+
+  .header__toggle::before {
+    top: 0;
+  }
+
+  .header__toggle::after {
+    bottom: 0;
+  }
+
+  .header__navigation {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60%;
+    min-height: 40%;
+    background-color: red;
+    padding: 90px 15px 20px 15px;             /*ЕСЛИ ЧТО, МОЖНО ПОИГРАТЬ ДЛЯ АДАПТИВА*/
+  }
+
+  .header__list{
+    display: block;
+  }
+
+  .header__item {
+    margin: 0px 0px 30px 0px;
+  }
 }
