@@ -85,8 +85,10 @@ body {
 }
 
 .header__item {
+  position: relative;
   list-style: none;
   margin: 0px 45px 0px 0px;
+  cursor: pointer;
 }
 
 .header__link {
@@ -148,9 +150,29 @@ body {
   }
 }
 
+/* Navigace pro mobilní zařízení (hover efekt) */
+
+@media only screen and (min-width: 768px) {
+  #header__underline {
+    display: block;
+    position: absolute;
+    left: 0;
+    height: 3px;
+    width: 0;
+    background-color: #443726;
+    bottom: -10px;
+    transition: all .4s ease-out 0s;
+    border-radius: 4px;
+  }
+}
+
 /* Navigace burger pro mobilní zařízení */
 
 @media only screen and (max-width: 767px) {
+  #header__underline {
+    display: none;
+  }
+
   body.block {
     overflow: hidden;
   }
@@ -253,11 +275,6 @@ body {
   .header__item:last-child {
     border-bottom: none;
   }
-
-  /* .header__link:hover,
-  .header__link:focus {                         Может исправить, а может удалить
-    color: rgb(41, 183, 226);
-  } */
 }
 
 @media only screen and (max-width: 430px) {
