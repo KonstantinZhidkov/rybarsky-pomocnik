@@ -300,8 +300,9 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-image: url('./images/background-images/fog.png');
+  background-size: cover;
   animation: animateFog 90s linear infinite;
 }
 
@@ -311,5 +312,133 @@ body {
   }
   100% {
     background-position: 5440px;
+  }
+}
+
+/* Rotační galerie */
+
+.gallery__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  background-color: black;
+}
+
+.gallery {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  transform-style: preserve-3d;
+  animation: animateAbove965 20s linear infinite;
+}
+
+.gallery span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+}
+
+.gallery span img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+}
+
+@media only screen and (max-width: 965px) {
+  .gallery__wrapper {
+    min-height: 60vh;
+  }
+
+  .gallery {
+      width: 150px;
+      height: 150px;
+      animation: animateMax965px 20s linear infinite;
+  }
+
+  .gallery span {
+      transform: rotateY(calc(var(--i) * 45deg)) translateZ(300px);
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .gallery__wrapper {
+    min-height: 50vh;
+  }
+
+  .gallery {
+      width: 100px;
+      height: 100px;
+      animation: animateMax750 20s linear infinite;
+  }
+
+  .gallery span {
+      transform: rotateY(calc(var(--i) * 45deg)) translateZ(180px);
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .gallery__wrapper {
+    min-height: 40vh;
+  }
+
+  .gallery {
+      width: 70px;
+      height: 70px;
+      animation: animateMax460 20s linear infinite;
+  }
+
+  .gallery span {
+      transform: rotateY(calc(var(--i) * 45deg)) translateZ(120px);
+  }
+}
+
+/* Sada keyframes na různá rozlišení */
+
+@keyframes animateAbove965 {
+  0% {
+      transform: perspective(1000px) rotateY(0deg);
+  }
+
+  100% {
+      transform: perspective(1000px) rotateY(360deg);
+  }
+}
+
+@keyframes animateMax965px {
+  0% {
+      transform: perspective(800px) rotateY(0deg);
+  }
+
+  100% {
+      transform: perspective(800px) rotateY(360deg);
+  }
+}
+
+@keyframes animateMax750 {
+  0% {
+      transform: perspective(400px) rotateY(0deg);
+  }
+
+  100% {
+      transform: perspective(400px) rotateY(360deg);
+  }
+}
+
+@keyframes animateMax460 {
+  0% {
+      transform: perspective(250px) rotateY(0deg);
+  }
+
+  100% {
+      transform: perspective(250px) rotateY(360deg);
   }
 }
