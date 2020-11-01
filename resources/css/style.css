@@ -318,13 +318,12 @@ body {
 /* Rotační galerie */
 
 .gallery__wrapper {
-  position: relative;
-  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 70vh;
   background-color: black;
+  overflow: hidden;
 }
 
 .gallery {
