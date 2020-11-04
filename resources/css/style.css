@@ -293,7 +293,7 @@ body {
   }
 }
 
-/* Stylizace mlhy */
+/* Stylování mlhy */
 
 .fog {
   position: absolute;
@@ -333,7 +333,7 @@ body {
   animation: animateAbove965 20s linear infinite;
 }
 
-.gallery span {
+.gallery .gallery__item {
   position: absolute;
   top: 0;
   left: 0;
@@ -344,7 +344,7 @@ body {
   transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
 }
 
-.gallery span img {
+.gallery .gallery__item .gallery__image {
   position: absolute;
   top: 0;
   left: 0;
@@ -364,7 +364,7 @@ body {
       animation: animateMax965px 20s linear infinite;
   }
 
-  .gallery span {
+  .gallery .gallery__item {
       transform: rotateY(calc(var(--i) * 45deg)) translateZ(300px);
   }
 }
@@ -380,7 +380,7 @@ body {
       animation: animateMax750 20s linear infinite;
   }
 
-  .gallery span {
+  .gallery .gallery__item {
       transform: rotateY(calc(var(--i) * 45deg)) translateZ(180px);
   }
 }
@@ -396,7 +396,7 @@ body {
       animation: animateMax460 20s linear infinite;
   }
 
-  .gallery span {
+  .gallery .gallery__item {
       transform: rotateY(calc(var(--i) * 45deg)) translateZ(120px);
   }
 }
@@ -441,4 +441,127 @@ body {
   100% {
       transform: perspective(250px) rotateY(360deg);
   }
+}
+
+/* cardBox */
+
+.cardBox {
+  position: relative;
+}
+
+/* cardBox zahláví */
+
+.cardBox__header {
+  font-size: 4em;
+  font-family: "SourceCodePro", sans-serif;
+}
+
+.cardBox__header-transparent {
+  position: relative;
+  top: 0;
+  left: 0;
+  color: transparent;
+  -webkit-text-stroke: 2px #03a9f4;
+}
+
+.cardBox__header-animated {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #03a9f4;
+  animation: wawyHeader 4s ease-in-out infinite;
+}
+
+@keyframes wawyHeader {
+  0%, 100% {
+		clip-path: polygon(0 26%, 13% 47%, 25% 55%, 42% 64%, 55% 65%, 69% 57%, 84% 46%, 100% 37%, 100% 100%, 0% 100%);
+  }
+  
+	50% {
+		clip-path: polygon(0 64%, 14% 58%, 25% 51%, 41% 42%, 57% 40%, 71% 45%, 85% 50%, 100% 61%, 100% 100%, 0% 100%);
+	}
+}
+
+/* cardBox obsah */
+
+.cardBox__body {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-between;
+  flex-wrap: wrap;
+  transform: skewY(-5deg);
+}
+
+/* Kartičky */
+
+.cardBox__body .card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  transition: .5s;
+}
+
+.cardBox__body .card::before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: 0;
+  width: 100%;
+  height: 15px;
+  background-color: #00c0f6;
+  transform-origin: bottom;
+  transform: skewX(45deg);
+  transition: .5s;
+}
+
+.cardBox__body .card::after {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 15px;
+  height: 50%;
+  background-color: green;
+  transform-origin: left;
+  transform: skewY(45deg);
+  transition: .5s;
+}
+
+.cardBox__body .card:hover {
+  transform: translateY(-40px);
+}
+
+.card__imageBox {
+  width: 100%;
+  height: 50%;
+}
+
+.card__imageBox .card__previewImage {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card .card__content {
+  width: 100%;
+  height: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #777;
+  background-color: green;
+}
+
+.card__content .card__header {
+
+}
+
+.card__content .card__description {
+
 }
