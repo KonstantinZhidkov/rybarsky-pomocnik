@@ -486,12 +486,13 @@ body {
 
 .cardBox__body {
   position: relative;
-  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
   align-content: space-between;
   flex-wrap: wrap;
-  transform: skewY(-5deg);
+  transform: skewY(-4deg);
 }
 
 /* Kartičky */
@@ -500,6 +501,7 @@ body {
   position: relative;
   width: 300px;
   height: 400px;
+  margin: 50px;
   background-color: #fff;
   transition: .5s;
 }
@@ -523,7 +525,7 @@ body {
   top: -15px;
   left: -15px;
   width: 15px;
-  height: 50%;
+  height: 100%;
   background-color: green;
   transform-origin: left;
   transform: skewY(45deg);
