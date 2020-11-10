@@ -447,6 +447,13 @@ body {
 
 .cardBox {
   position: relative;
+  overflow: hidden;
+}
+
+.pstruhove {
+  position: relative;
+  width: 100%;
+  background: url('../images/background-images/pstruhove-background.jpg') 50% 50% / cover no-repeat;
 }
 
 /* cardBox zahláví */
@@ -458,17 +465,17 @@ body {
 
 .cardBox__header-transparent {
   position: relative;
-  top: 0;
-  left: 0;
+  top: 10px;
+  left: 15px;
   color: transparent;
-  -webkit-text-stroke: 2px #03a9f4;
+  -webkit-text-stroke: 3px #032e42;
 }
 
 .cardBox__header-animated {
   position: absolute;
-  top: 0;
-  left: 0;
-  color: #03a9f4;
+  top: 10px;
+  left: 15px;
+  color: #18b6ff;
   animation: wawyHeader 4s ease-in-out infinite;
 }
 
@@ -493,6 +500,7 @@ body {
   align-content: space-between;
   flex-wrap: wrap;
   transform: skewY(-4deg);
+  z-index: 2;
 }
 
 /* Kartičky */
@@ -567,3 +575,86 @@ body {
 .card__content .card__description {
 
 }
+
+@media only screen and (max-width: 680px) {
+  .cardBox__body .card {
+    margin: 50px 20px;
+  }
+}
+
+/* Bubliny */
+
+.cardBox__bubbleBox {
+  position: absolute;
+  width: 100%;
+  bottom: -50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.cardBox__bubble {
+  position: relative;
+  animation: bubbleFloat 25s linear infinite;
+  z-index: 1;
+}
+
+@keyframes bubbleFloat {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-1000vh);
+  }
+}
+
+.cardBox__bubble:nth-child(1) {
+  width: 32px;
+  animation-delay: 5s;
+}
+
+.cardBox__bubble:nth-child(2) {
+  width: 26px;
+  animation-delay: 2s;
+}
+
+.cardBox__bubble:nth-child(3) {
+  width: 38px;
+  animation-delay: 15s;
+}
+
+.cardBox__bubble:nth-child(4) {
+  width: 40px;
+  animation-delay: 10s;
+}
+
+.cardBox__bubble:nth-child(5) {
+  width: 32px;
+  animation-delay: 20s;
+}
+
+.cardBox__bubble:nth-child(6) {
+  width: 45px;
+  animation-delay: 8s;
+}
+
+.cardBox__bubble:nth-child(7) {
+  width: 28px;
+  animation-delay: 1s;
+}
+
+.cardBox__bubble:nth-child(8) {
+  width: 50px;
+  animation-delay: 17s;
+}
+
+.cardBox__bubble:nth-child(9) {
+  width: 34px;
+  animation-delay: 12s;
+}
+
+.cardBox__bubble:nth-child(10) {
+  width: 40px;
+  animation-delay: 22s;
+} 
