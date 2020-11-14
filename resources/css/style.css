@@ -322,7 +322,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 70vh;
-  background-color: black;
+  background: linear-gradient(18deg, #00626f, #02a6b0, #9ab8c7, #a3bbcb 80%);
 }
 
 .gallery {
@@ -448,6 +448,7 @@ body {
 .cardBox {
   position: relative;
   overflow: hidden;
+  padding: 20px 0 60px 0;
 }
 
 .pstruhove {
@@ -465,8 +466,8 @@ body {
 
 .cardBox__header-transparent {
   position: relative;
-  top: 10px;
-  left: 15px;
+  top: -10px;
+  left: 20px;
   color: transparent;
   -webkit-text-stroke: 3px #032e42;
 }
@@ -474,7 +475,7 @@ body {
 .cardBox__header-animated {
   position: absolute;
   top: 10px;
-  left: 15px;
+  left: 20px;
   color: #18b6ff;
   animation: wawyHeader 4s ease-in-out infinite;
 }
@@ -576,9 +577,58 @@ body {
 
 }
 
+@media only screen and (max-width: 1599px) {
+  .cardBox {
+    padding-top: 30px;
+  }
+
+  .cardBox__header-transparent {
+    top: -20px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .cardBox {
+    padding-top: 40px;
+  }
+
+  .cardBox__header-transparent {
+    top: -30px;
+  }
+}
+
 @media only screen and (max-width: 680px) {
   .cardBox__body .card {
+    margin: 50px 30px;
+  }
+
+  .cardBox__header {
+    font-size: 3em;
+  }
+}
+
+@media only screen and (max-width: 499px) {
+  .cardBox__body .card {
     margin: 50px 20px;
+  }
+
+  .cardBox__header {
+    font-size: 2.5em;
+  }
+
+  .cardBox__header-transparent {
+    -webkit-text-stroke: 2px #032e42;
+  }
+}
+
+@media only screen and (max-width: 422px) {
+  .cardBox__body .card {
+    margin: 50px 0;
+  }
+
+  .cardBox__header {
+    font-size: 2em;
+    left: 6px;
   }
 }
 
