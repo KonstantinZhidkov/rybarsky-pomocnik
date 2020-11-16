@@ -6,7 +6,7 @@ let headerList = document.querySelector('.header__list');
 function setUnderline(navElem) {
     headerUnderline.style.left = navElem.offsetLeft + "px";
     headerUnderline.style.width = navElem.offsetWidth + "px";
-};
+}
 
 headerItem.forEach(item => {
     item.addEventListener('mouseenter', event => {
@@ -16,8 +16,8 @@ headerItem.forEach(item => {
 
 headerList.onmouseleave = () => {
     headerUnderline.style.visibility = 'hidden';
-};
+}
 
 headerList.onmouseenter = () => {
     headerUnderline.style.visibility = 'visible';
-};
+}
