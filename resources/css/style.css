@@ -448,13 +448,16 @@ body {
 .cardBox {
   position: relative;
   overflow: hidden;
+  width: 100%;
   padding: 20px 0 60px 0;
 }
 
 .pstruhove {
-  position: relative;
-  width: 100%;
-  background: url('../images/background-images/pstruhove-background.jpg') 50% 50% / cover no-repeat;
+  background: url('../images/background-images/pstruhove-background.webp') 50% 50% / cover no-repeat;
+}
+
+.mimopstruhove {
+  background: url('../images/background-images/mimopstruhove-background.webp') 50% 50% / cover no-repeat;
 }
 
 /* cardBox zahláví */
@@ -469,7 +472,14 @@ body {
   top: 0;
   left: 30px;
   color: transparent;
+}
+
+.pstruhove__header-transparent {
   -webkit-text-stroke: 3px #032e42;
+}
+
+.mimopstruhove__header-transparent {
+  -webkit-text-stroke: 3px #0c2427;
 }
 
 .cardBox__header-animated {
@@ -478,6 +488,14 @@ body {
   left: 30px;
   color: #18b6ff;
   animation: wawyHeader 4s ease-in-out infinite;
+}
+
+.pstruhove__header-animated {
+  color: #18b6ff;
+}
+
+.mimopstruhove__header-animated {
+  color: #080a80;
 }
 
 @keyframes wawyHeader {
@@ -531,7 +549,6 @@ body {
   left: 0;
   width: 100%;
   height: 15px;
-  background-color: #12363d;
   transform-origin: bottom;
   transform: skewX(45deg);
   transition: .5s;
@@ -544,10 +561,25 @@ body {
   left: -15px;
   width: 15px;
   height: 100%;
-  background-color: #071a1d;
   transform-origin: left;
   transform: skewY(45deg);
   transition: .5s;
+}
+
+.cardBox__body .card-light::before {
+  background-color: #1e5479;
+}
+
+.cardBox__body .card-light::after {
+  background-color: #122e42;
+}
+
+.cardBox__body .card-dark::before {
+    background-color: #12363d;
+}
+
+.cardBox__body .card-dark::after {
+  background-color: #071a1d;
 }
 
 .cardBox__body .card:hover {
@@ -574,6 +606,14 @@ body {
   justify-content: space-around;
   align-items: center;
   text-align: center;
+}
+
+.card__content-light {
+  color: #D8EEE1;
+  background-color: #163D57;
+}
+
+.card__content-dark {
   color: #F4A15D;
   background-color: #0C2427;
 }
@@ -590,9 +630,18 @@ body {
   font-size: 1.1em;
 }
 
+/* cardBox media */
+
 @media only screen and (max-width: 1380px) {
   .cardBox__body .card {
     margin: 100px 50px;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .mimopstruhove__header-transparent,
+  .mimopstruhove__header-animated {
+    font-size: 3.2em;
   }
 }
 
@@ -601,10 +650,16 @@ body {
     padding-top: 40px;
   }
   
-  .cardBox__header {
+  .mimopstruhove__header-transparent,
+  .mimopstruhove__header-animated {
+    font-size: 2.5em;
+  }
+
+  .pstruhove__header-transparent,
+  .pstruhove__header-animated {
     font-size: 3em;
   }
-  
+
   .cardBox__header-transparent {
     top: -20px;
   }
@@ -614,8 +669,16 @@ body {
   }
 }
 
-@media only screen and (max-width: 520px) {
-  .cardBox__header {
+@media only screen and (max-width: 530px) {
+  .mimopstruhove__header-transparent,
+  .mimopstruhove__header-animated {
+    left: 5px;
+    font-size: 2.2em;
+    word-spacing: -0.2em;
+  }
+
+  .pstruhove__header-transparent,
+  .pstruhove__header-animated {
     left: 20px;
     font-size: 2.5em;
   }
@@ -662,6 +725,19 @@ body {
   }
 }
 
+@media only screen and (max-width: 390px) {
+  .mimopstruhove__header-transparent,
+  .mimopstruhove__header-animated {
+    left: 1px;
+    word-spacing: -0.4em;
+    letter-spacing: -0.08em;
+  }
+
+  .cardBox__header-transparent {
+    -webkit-text-stroke: 1px #032e42;
+  }
+}
+
 /* Bubliny */
 
 .cardBox__bubbleBox {
@@ -688,6 +764,8 @@ body {
     transform: translateY(-1000vh);
   }
 }
+
+/* Jednotlivé bubliny */
 
 .cardBox__bubble:nth-child(1) {
   width: 32px;
@@ -737,4 +815,91 @@ body {
 .cardBox__bubble:nth-child(10) {
   width: 40px;
   animation-delay: 22s;
-} 
+}
+
+/* Rybičky */
+
+.cardBox__fishBox {
+  position: absolute;
+  height: 100%;
+  left: -100px;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.cardBox__fish {
+  position: relative;
+  animation: fishSwim 15s linear infinite;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  .cardBox__fish {
+    animation: fishSwim 10s linear infinite;
+  }
+}
+
+@keyframes fishSwim {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(130vw);
+  }
+}
+
+/* Jednotlivé rybičky */
+
+.cardBox__fish:nth-child(1) {
+  width: 52px;
+  animation-delay: 5s;
+}
+
+.cardBox__fish:nth-child(2) {
+  width: 40px;
+  animation-delay: 2s;
+}
+
+.cardBox__fish:nth-child(3) {
+  width: 48px;
+  animation-delay: 15s;
+}
+
+.cardBox__fish:nth-child(4) {
+  width: 55px;
+  animation-delay: 10s;
+}
+
+.cardBox__fish:nth-child(5) {
+  width: 38px;
+  animation-delay: 20s;
+}
+
+.cardBox__fish:nth-child(6) {
+  width: 65px;
+  animation-delay: 8s;
+}
+
+.cardBox__fish:nth-child(7) {
+  width: 42px;
+  animation-delay: 1s;
+}
+
+.cardBox__fish:nth-child(8) {
+  width: 60px;
+  animation-delay: 17s;
+}
+
+.cardBox__fish:nth-child(9) {
+  width: 48px;
+  animation-delay: 12s;
+}
+
+.cardBox__fish:nth-child(10) {
+  width: 55px;
+  animation-delay: 22s;
+}
