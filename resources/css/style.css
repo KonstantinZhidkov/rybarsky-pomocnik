@@ -61,7 +61,7 @@ body {
   transition: 0.4s;
 }
 
-.header__body.nonstick {
+.header__body.stick {
   height: 80px;
   background-color: #e7e4e4;
 }
@@ -111,7 +111,7 @@ body {
     height: 80px;
   }
 
-  .header__body.nonstick {
+  .header__body.stick {
     height: 70px;
   }
 
@@ -182,7 +182,7 @@ body {
     height: 60px;
   }
 
-  .header__body.nonstick {
+  .header__body.stick {
     height: 54px;
   }
 
@@ -927,10 +927,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 
 .pocasi__secondary {
   width: 40%;
   min-height: 100vh;
+  background: rgba(0, 0, 15, 0.15);
+  box-shadow: 0 8px 8px 0 rgba(116, 71, 13, 0.25);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
 }
+
+@-moz-document url-prefix() {  
+  .pocasi__secondary {
+    background-color: rgba(20, 20, 20, 0.6);
+  }

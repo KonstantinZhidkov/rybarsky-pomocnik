@@ -13,9 +13,9 @@ $(document).ready(() => {
     // Sticky navigace
     $(window).on('scroll', () => {
         if ($(window).scrollTop()) {
-            $('.header__body').addClass('nonstick');
+            $('.header__body').addClass('stick');
         } else {
-            $('.header__body').removeClass('nonstick');
+            $('.header__body').removeClass('stick');
         }
     });
 });
