@@ -907,7 +907,7 @@ body {
 /* Počasí block */
 
 .pocasi {
-  min-height: 100vh;
+  min-height: 92vh;
   width: 100%;
   display: flex;
   background: url("../images/background-images/pocasi-background.jpg") 50% 50% / cover no-repeat;
@@ -915,31 +915,136 @@ body {
 
 .pocasi__main {
   width: 60%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-.pocasi__content {
-  min-height: 40%;
-  width: 100%;
+  min-height: 92vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: #fff; */
 }
+
+.pocasi__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #000; */
+}
+
+.pocasi__teplota,
+.pocasi__mestoDatumContainer {
+  color: #e7e4e4;
+  opacity: 0.85;
+  font-family: "SourceCodePro", sans-serif;
+}
+
+.pocasi__teplota {
+  font-size: 10em;
+}
+
+.pocasi__mesto {
+  font-size: 5em;
+}
+
+.pocasi__datum {
+  font-size: 3em;
+}
+
+.pocasi__icon {
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+}
+
+/* Glass morphism */
 
 .pocasi__secondary {
   width: 40%;
-  min-height: 100vh;
+  min-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
   background: rgba(0, 0, 15, 0.15);
   box-shadow: 0 8px 8px 0 rgba(116, 71, 13, 0.25);
   backdrop-filter: blur(40px);
   -webkit-backdrop-filter: blur(40px);
 }
 
+/* Náhradní styly pro Firefox */
+
 @-moz-document url-prefix() {  
   .pocasi__secondary {
     background-color: rgba(20, 20, 20, 0.6);
   }
+}
+
+.enterArea {
+  height: 100px;
+  min-width: 90%;
+  margin-left: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.enterArea__input {
+  width: 100%;
+  max-width: 75%;
+  padding: 30px 0px 5px 0px;
+  /* margin-right: 20px; */
+  border: none;  
+  outline: none;
+  border-bottom: 3px solid #e7e4e4;
+  background-color: transparent;
+  color: #e7e4e4;
+  font-family: "SourceCodePro", sans-serif;
+  font-size: 2.4em;
+}
+
+.enterArea__input::placeholder {
+  color: #e7e4e4;
+  opacity: 0.6;
+}
+
+.enterArea__submitButton {
+  max-width: 100px;
+  width: 100%;
+  height: 100%;
+  background: url('../icons/search-icon.svg') no-repeat center center #d66c05;
+  background-size: 50%;
+}
+
+.podrobnosti__wrapper {
+  min-height: calc(100% - 100px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.podrobnosti {
+  width: 80%;
+  border-bottom: 3px solid #e7e4e4;
+}
+
+.podrobnosti__header {
+  margin-bottom: 70px;
+  font-family: "SourceCodePro", sans-serif;
+  font-size: 2.4em;
+  color: #e7e4e4;
+}
+
+.podrobnosti__body {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul.podrobnosti__keys > li,
+ul.podrobnosti__values > li {
+  margin-bottom: 50px;
+  font-family: "Righteous", sans-serif;
+  list-style: none;
+  font-size: 2em;
+  color: #e7e4e4;
+  opacity: 0.8;
+}
