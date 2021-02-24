@@ -169,7 +169,7 @@ body {
 
 /* Navigace burger pro mobilní zařízení */
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   #header__underline {
     display: none;
   }
@@ -922,10 +922,19 @@ body {
 }
 
 .pocasi__content {
+  width: 100%;
+  max-width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  /* background-color: #000; */
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.pocasi__mesto,
+.pocasi__datum,
+.pocasi__icon {
+  margin-top: 20px;
 }
 
 .pocasi__teplota,
@@ -988,7 +997,6 @@ body {
   width: 100%;
   max-width: 75%;
   padding: 30px 0px 5px 0px;
-  /* margin-right: 20px; */
   border: none;  
   outline: none;
   border-bottom: 3px solid #e7e4e4;
@@ -1048,3 +1056,93 @@ ul.podrobnosti__values > li {
   color: #e7e4e4;
   opacity: 0.8;
 }
+
+/* Počasí media */
+
+@media only screen and (max-width: 1500px) {
+  .pocasi__teplota {
+    font-size: 8em;
+  }
+  
+  .pocasi__mesto {
+    font-size: 4em;
+  }
+  
+  .pocasi__datum {
+    font-size: 2.5em;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .pocasi__teplota {
+    font-size: 6.75em;
+  }
+  
+  .pocasi__mesto {
+    font-size: 3.5em;
+  }
+  
+  .pocasi__datum {
+    font-size: 2.25em;
+  }  
+  
+  .enterArea {
+    height: 80px;
+  }
+
+  .enterArea__input {
+    font-size: 2em;
+  }
+
+  .enterArea__submitButton {
+    max-width: 80px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .podrobnosti__header {
+    font-size: 2em;
+  }
+  
+  ul.podrobnosti__keys > li,
+  ul.podrobnosti__values > li {
+    font-size: 1.8em;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .pocasi__teplota {
+    font-size: 5.75em;
+  }
+  
+  .pocasi__mesto {
+    font-size: 3em;
+  }
+  
+  .pocasi__datum {
+    font-size: 2em;
+  }
+
+  .pocasi__icon {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .enterArea {
+    height: 70px;
+    min-width: 97%;
+    margin-left: 3%;
+  }
+
+  .enterArea__input {
+    font-size: 1.6em;
+  }
+
+  .enterArea__submitButton {
+    max-width: 70px;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {}
