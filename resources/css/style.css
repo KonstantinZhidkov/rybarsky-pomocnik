@@ -924,6 +924,7 @@ body {
 .pocasi__content {
   width: 100%;
   max-width: 100%;
+  padding: 10px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -1086,6 +1087,10 @@ ul.podrobnosti__values > li {
     font-size: 2.25em;
   }  
   
+  .podrobnosti__wrapper {
+    min-height: calc(100% - 80px);
+  }
+
   .enterArea {
     height: 80px;
   }
@@ -1128,6 +1133,10 @@ ul.podrobnosti__values > li {
     height: 80px;
   }
   
+  .podrobnosti__wrapper {
+    min-height: calc(100% - 70px);
+  }
+
   .enterArea {
     height: 70px;
     min-width: 97%;
@@ -1145,4 +1154,79 @@ ul.podrobnosti__values > li {
   }
 }
 
-@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 767px) {
+  .pocasi {
+    flex-direction: column;
+  }
+
+  .pocasi__main {
+    width: 100%;
+    min-height: 40vh;
+    order: 2;
+  }
+
+  .pocasi__secondary {
+    width: 100%;
+    min-height: 52vh;
+    order: 1;
+    justify-content: space-evenly;
+  }
+
+  .podrobnosti__wrapper {
+    margin-top: 50px;
+  }
+
+  .enterArea {
+    min-width: 100%;
+    margin: 10px 0px 0px 0px;
+    justify-content: center;
+  }
+
+  .enterArea__input {
+    width: auto;
+    padding: 0;
+    font-size: 2em;
+  }
+
+  .enterArea__submitButton {
+    border-radius: 5px 5px 5px 0px;
+  }
+
+  .podrobnosti__header {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  .enterArea,
+  .podrobnosti__header {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .enterArea__input {
+    font-size: 1.6em;
+  }
+
+  .podrobnosti__header {
+    font-size: 1.8em;
+  }
+  
+  ul.podrobnosti__keys > li,
+  ul.podrobnosti__values > li {
+    font-size: 1.6em;
+  }
+  
+  .pocasi__teplota {
+    font-size: 5em;
+  }
+  
+  .pocasi__mesto {
+    font-size: 2.5em;
+  }
+  
+  .pocasi__datum {
+    font-size: 1.5em;
+  }
+}
