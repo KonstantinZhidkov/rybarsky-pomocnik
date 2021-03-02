@@ -1010,6 +1010,11 @@ body {
 .enterArea__input::placeholder {
   color: #e7e4e4;
   opacity: 0.6;
+  transition: opacity 0.2s linear;
+}
+
+.enterArea__input:focus::placeholder {
+  opacity: 0;
 }
 
 .enterArea__submitButton {
@@ -1017,6 +1022,17 @@ body {
   width: 100%;
   height: 100%;
   background: url('../icons/search-icon.svg') no-repeat center center #d66c05;
+  background-size: 50%;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.enterArea__submitButton:hover {
+  background-size: 70%;
+}
+
+.enterArea__submitButton:active {
   background-size: 50%;
 }
 
