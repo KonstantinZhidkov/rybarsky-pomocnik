@@ -933,8 +933,7 @@ body {
 }
 
 .pocasi__mesto,
-.pocasi__datum,
-.pocasi__icon {
+.pocasi__datum {
   margin-top: 20px;
 }
 
@@ -958,9 +957,13 @@ body {
 }
 
 .pocasi__icon {
-  width: 100px;
-  height: 100px;
-  background-color: #000;
+  width: 150px;
+  height: 150px;
+}
+
+.pocasi__icon img {
+  width: 100%;
+  height: 100%;
 }
 
 /* Glass morphism */
