@@ -22,12 +22,13 @@ headerList.onmouseenter = () => {
     headerUnderline.style.visibility = 'visible';
 }
 
+
 // *** Počasí block ***
 
 const enterAreaInput = document.querySelector('.enterArea__input');
 const enterAreaSubmitButton = document.querySelector('.enterArea__submitButton');
 const api = {
-    key: "b42ee8f264297822fbae61139212bbd8",    // Můj unikátní klíč
+    key: "b42ee8f264297822fbae61139212bbd8", // Můj unikátní klíč
     url: "https://api.openweathermap.org/data/2.5/"
 }
 
@@ -117,3 +118,33 @@ function datumGenerator(param) {
 }
 
 getResults("Opava");
+
+
+// *** O projektu block ***
+
+const parallaxObrazky = ['daiwa.png', 'krabicka.png', 'multiplikator-cerveny.png', 'rybarsky-prut-a-navijak.png', 'krmitko.png', 'muska.png', 'prut-a-navijak.png', 'wobbler.png', 'navijak-cerveny.png', 'prut-a-navijak2.png'];
+const oProjektuImageContainer = document.querySelector('.oProjektu__imageContainer');
+
+const imageGenerator = arr => {
+    for (let i = 0; i < arr.length; i++) {
+        let img = document.createElement('img');
+        let randomNum = Math.floor(Math.random() * 15) + 1; // náhodné číslo od 1 do 15
+        img.setAttribute('src', `./resources/images/background-images/parallax-background-images/${arr[i]}`);
+        img.setAttribute('data', randomNum *= Math.floor(Math.random() * 2) == 1 ? 1 : -1); // v 50% případů se přidá znaménko minus
+        oProjektuImageContainer.appendChild(img);
+    }
+}
+
+imageGenerator(parallaxObrazky);
+
+function parallaxFunction(elem) {
+    this.querySelectorAll('.oProjektu__imageContainer img').forEach(image => {
+        let rychlostPohybu = image.getAttribute('data');
+        let x = (window.innerWidth - elem.pageX * rychlostPohybu) / 100;
+        let y = (window.innerHeight - elem.pageY * rychlostPohybu) / 100;
+
+        image.style.transform = `rotate(${x}deg) rotate(${-y}deg)`;
+    });
+}
+
+oProjektuImageContainer.addEventListener('mousemove', parallaxFunction);

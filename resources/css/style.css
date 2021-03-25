@@ -1,25 +1,25 @@
 @font-face {
-	font-family: 'Courgette';
-	src: url('../fonts/Courgette-Regular.eot');
-	src: local('☺'), url('../fonts/Courgette-Regular.woff') format('woff'), url('../fonts/Courgette-Regular.ttf') format('truetype'), url('../fonts/Courgette-Regular.svg') format('svg');
-	font-weight: 400;
-	font-style: normal;
+  font-family: 'Courgette';
+  src: url('../fonts/Courgette-Regular.eot');
+  src: local('☺'), url('../fonts/Courgette-Regular.woff') format('woff'), url('../fonts/Courgette-Regular.ttf') format('truetype'), url('../fonts/Courgette-Regular.svg') format('svg');
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'SourceCodePro';
-	src: url('../fonts/SourceCodePro-Bold.eot');
-	src: local('☺'), url('../fonts/SourceCodePro-Bold.woff') format('woff'), url('../fonts/SourceCodePro-Bold.ttf') format('truetype'), url('../fonts/SourceCodePro-Bold.svg') format('svg');
+  font-family: 'SourceCodePro';
+  src: url('../fonts/SourceCodePro-Bold.eot');
+  src: local('☺'), url('../fonts/SourceCodePro-Bold.woff') format('woff'), url('../fonts/SourceCodePro-Bold.ttf') format('truetype'), url('../fonts/SourceCodePro-Bold.svg') format('svg');
   font-weight: 700;
-	font-style: normal;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Righteous';
-	src: url('../fonts/Righteous.eot');
-	src: local('☺'), url('../fonts/Righteous.woff') format('woff'), url('../fonts/Righteous.ttf') format('truetype'), url('../fonts/Righteous.svg') format('svg');
-	font-weight: 400;
-	font-style: normal;
+  font-family: 'Righteous';
+  src: url('../fonts/Righteous.eot');
+  src: local('☺'), url('../fonts/Righteous.woff') format('woff'), url('../fonts/Righteous.ttf') format('truetype'), url('../fonts/Righteous.svg') format('svg');
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* Default settings */
@@ -259,7 +259,7 @@ body {
     top: 0;
   }
 
-  .header__list{
+  .header__list {
     display: block;
   }
 
@@ -310,6 +310,7 @@ body {
   0% {
     background-position: 0px;
   }
+
   100% {
     background-position: 5440px;
   }
@@ -359,13 +360,13 @@ body {
   }
 
   .gallery {
-      width: 185px;
-      height: 150px;
-      animation: animateMax965px 20s linear infinite;
+    width: 185px;
+    height: 150px;
+    animation: animateMax965px 20s linear infinite;
   }
 
   .gallery .gallery__item {
-      transform: rotateY(calc(var(--i) * 45deg)) translateZ(300px);
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(300px);
   }
 }
 
@@ -375,13 +376,13 @@ body {
   }
 
   .gallery {
-      width: 125px;
-      height: 100px;
-      animation: animateMax750 20s linear infinite;
+    width: 125px;
+    height: 100px;
+    animation: animateMax750 20s linear infinite;
   }
 
   .gallery .gallery__item {
-      transform: rotateY(calc(var(--i) * 45deg)) translateZ(180px);
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(180px);
   }
 }
 
@@ -391,13 +392,13 @@ body {
   }
 
   .gallery {
-      width: 85px;
-      height: 70px;
-      animation: animateMax460 20s linear infinite;
+    width: 85px;
+    height: 70px;
+    animation: animateMax460 20s linear infinite;
   }
 
   .gallery .gallery__item {
-      transform: rotateY(calc(var(--i) * 45deg)) translateZ(120px);
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(120px);
   }
 }
 
@@ -405,41 +406,41 @@ body {
 
 @keyframes animateAbove965 {
   0% {
-      transform: perspective(1000px) rotateY(0deg);
+    transform: perspective(1000px) rotateY(0deg);
   }
 
   100% {
-      transform: perspective(1000px) rotateY(360deg);
+    transform: perspective(1000px) rotateY(360deg);
   }
 }
 
 @keyframes animateMax965px {
   0% {
-      transform: perspective(800px) rotateY(0deg);
+    transform: perspective(800px) rotateY(0deg);
   }
 
   100% {
-      transform: perspective(800px) rotateY(360deg);
+    transform: perspective(800px) rotateY(360deg);
   }
 }
 
 @keyframes animateMax750 {
   0% {
-      transform: perspective(400px) rotateY(0deg);
+    transform: perspective(400px) rotateY(0deg);
   }
 
   100% {
-      transform: perspective(400px) rotateY(360deg);
+    transform: perspective(400px) rotateY(360deg);
   }
 }
 
 @keyframes animateMax460 {
   0% {
-      transform: perspective(250px) rotateY(0deg);
+    transform: perspective(250px) rotateY(0deg);
   }
 
   100% {
-      transform: perspective(250px) rotateY(360deg);
+    transform: perspective(250px) rotateY(360deg);
   }
 }
 
@@ -499,13 +500,15 @@ body {
 }
 
 @keyframes wawyHeader {
-  0%, 100% {
-		clip-path: polygon(0 26%, 13% 47%, 25% 55%, 42% 64%, 55% 65%, 69% 57%, 84% 46%, 100% 37%, 100% 100%, 0% 100%);
+
+  0%,
+  100% {
+    clip-path: polygon(0 26%, 13% 47%, 25% 55%, 42% 64%, 55% 65%, 69% 57%, 84% 46%, 100% 37%, 100% 100%, 0% 100%);
   }
-  
-	50% {
-		clip-path: polygon(0 64%, 14% 58%, 25% 51%, 41% 42%, 57% 40%, 71% 45%, 85% 50%, 100% 61%, 100% 100%, 0% 100%);
-	}
+
+  50% {
+    clip-path: polygon(0 64%, 14% 58%, 25% 51%, 41% 42%, 57% 40%, 71% 45%, 85% 50%, 100% 61%, 100% 100%, 0% 100%);
+  }
 }
 
 /* cardBox obsah */
@@ -575,7 +578,7 @@ body {
 }
 
 .cardBox__body .card-dark::before {
-    background-color: #12363d;
+  background-color: #12363d;
 }
 
 .cardBox__body .card-dark::after {
@@ -639,6 +642,7 @@ body {
 }
 
 @media only screen and (max-width: 830px) {
+
   .mimopstruhove__header-transparent,
   .mimopstruhove__header-animated {
     font-size: 3.2em;
@@ -649,7 +653,7 @@ body {
   .cardBox {
     padding-top: 40px;
   }
-  
+
   .mimopstruhove__header-transparent,
   .mimopstruhove__header-animated {
     font-size: 2.5em;
@@ -663,13 +667,14 @@ body {
   .cardBox__header-transparent {
     top: -20px;
   }
-  
+
   .cardBox__body .card {
     margin: 70px 30px;
   }
 }
 
 @media only screen and (max-width: 530px) {
+
   .mimopstruhove__header-transparent,
   .mimopstruhove__header-animated {
     left: 5px;
@@ -715,17 +720,18 @@ body {
   .card__content .card__header {
     font-size: 2em;
   }
-  
+
   .card__content .card__supplementalHeader {
     font-size: 1.6em;
   }
-  
+
   .card__content .card__description {
     font-size: 0.9em;
   }
 }
 
 @media only screen and (max-width: 390px) {
+
   .mimopstruhove__header-transparent,
   .mimopstruhove__header-animated {
     left: 1px;
@@ -983,7 +989,7 @@ body {
 
 /* Náhradní styly pro Firefox */
 
-@-moz-document url-prefix() {  
+@-moz-document url-prefix() {
   .pocasi__secondary {
     background-color: rgba(20, 20, 20, 0.6);
   }
@@ -1001,7 +1007,7 @@ body {
   width: 100%;
   max-width: 75%;
   padding: 30px 0px 5px 0px;
-  border: none;  
+  border: none;
   outline: none;
   border-bottom: 3px solid #e7e4e4;
   background-color: transparent;
@@ -1067,8 +1073,8 @@ body {
   align-items: center;
 }
 
-ul.podrobnosti__keys > li,
-ul.podrobnosti__values > li {
+ul.podrobnosti__keys>li,
+ul.podrobnosti__values>li {
   margin-bottom: 50px;
   font-family: "Righteous", sans-serif;
   list-style: none;
@@ -1083,11 +1089,11 @@ ul.podrobnosti__values > li {
   .pocasi__teplota {
     font-size: 8em;
   }
-  
+
   .pocasi__mesto {
     font-size: 4em;
   }
-  
+
   .pocasi__datum {
     font-size: 2.5em;
   }
@@ -1097,15 +1103,15 @@ ul.podrobnosti__values > li {
   .pocasi__teplota {
     font-size: 6.75em;
   }
-  
+
   .pocasi__mesto {
     font-size: 3.5em;
   }
-  
+
   .pocasi__datum {
     font-size: 2.25em;
-  }  
-  
+  }
+
   .podrobnosti__wrapper {
     min-height: calc(100% - 80px);
   }
@@ -1127,9 +1133,9 @@ ul.podrobnosti__values > li {
   .podrobnosti__header {
     font-size: 2em;
   }
-  
-  ul.podrobnosti__keys > li,
-  ul.podrobnosti__values > li {
+
+  ul.podrobnosti__keys>li,
+  ul.podrobnosti__values>li {
     font-size: 1.8em;
   }
 }
@@ -1138,11 +1144,11 @@ ul.podrobnosti__values > li {
   .pocasi__teplota {
     font-size: 5.75em;
   }
-  
+
   .pocasi__mesto {
     font-size: 3em;
   }
-  
+
   .pocasi__datum {
     font-size: 2em;
   }
@@ -1151,7 +1157,7 @@ ul.podrobnosti__values > li {
     width: 80px;
     height: 80px;
   }
-  
+
   .podrobnosti__wrapper {
     min-height: calc(100% - 70px);
   }
@@ -1217,6 +1223,7 @@ ul.podrobnosti__values > li {
 }
 
 @media only screen and (max-height: 600px) {
+
   .enterArea,
   .podrobnosti__header {
     margin-bottom: 50px;
@@ -1231,21 +1238,53 @@ ul.podrobnosti__values > li {
   .podrobnosti__header {
     font-size: 1.8em;
   }
-  
-  ul.podrobnosti__keys > li,
-  ul.podrobnosti__values > li {
+
+  ul.podrobnosti__keys>li,
+  ul.podrobnosti__values>li {
     font-size: 1.6em;
   }
-  
+
   .pocasi__teplota {
     font-size: 5em;
   }
-  
+
   .pocasi__mesto {
     font-size: 2.5em;
   }
-  
+
   .pocasi__datum {
     font-size: 1.5em;
   }
+}
+
+/* O projektu block */
+
+.oProjektu {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.oProjektu__imageContainer {
+  width: 100%;
+  max-height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.oProjektu__imageContainer>* {
+  width: 150px;
+  height: 150px;
+  margin: 100px;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+h3.layer {
+  position: absolute;
+  font-size: 12em;
 }

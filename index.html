@@ -12,11 +12,11 @@
 
 <body>
   <!--Úvodní stránka-->
-  <div class="homepage__wrapper">
+  <div class="homepage__wrapper" id="homepage">
     <header class="header">
       <div class="header__body">
         <!-- Logotyp -->
-        <a class="header__logo" href="#">
+        <a class="header__logo" href="#homepage">
           <img class="logo__image" src="./resources/logos/rybarsky-pomocnik-logotyp-bez-bg.svg" alt="logo">
         </a>
         <!--Navigace burger pro mobilní zařízení-->
@@ -28,10 +28,10 @@
           <ul class="header__list">
             <li id="header__underline"></li>
             <li class="header__item">
-              <a class="header__link" href="#">Pstruhové revíry</a>
+              <a class="header__link" href="#pstruhove">Pstruhové revíry</a>
             </li>
             <li class="header__item">
-              <a class="header__link" href="#">Mimopstruhové revíry</a>
+              <a class="header__link" href="#mimopstruhove">Mimopstruhové revíry</a>
             </li>
             <li class="header__item">
               <a class="header__link" href="#">O projektu</a>
@@ -77,7 +77,7 @@
       </section>
     </div>
     <!-- Pstruhové rybářské revíry -->
-    <section class="cardBox pstruhove">
+    <section class="cardBox pstruhove"  id="pstruhove">
       <h2 class="cardBox__header cardBox__header-transparent pstruhove__header-transparent">Pstruhové revíry</h2>
       <h2 class="cardBox__header cardBox__header-animated pstruhove__header-animated">Pstruhové revíry</h2>
       <div class="cardBox__body">
@@ -253,7 +253,7 @@
       </div>
     </section>
     <!-- Mimopstruhové rybářské revíry -->
-    <section class="cardBox mimopstruhove">
+    <section class="cardBox mimopstruhove" id="mimopstruhove">
       <h2 class="cardBox__header cardBox__header-transparent mimopstruhove__header-transparent">Mimopstruhové revíry
       </h2>
       <h2 class="cardBox__header cardBox__header-animated mimopstruhove__header-animated">Mimopstruhové revíry</h2>
@@ -429,7 +429,7 @@
       </div>
     </section>
     <!-- Počasí block -->
-    <section class="pocasi">
+    <section class="pocasi" id="pocasi">
       <div class="pocasi__main">
         <div class="pocasi__content">
           <div class="pocasi__teplota"></div>
@@ -463,6 +463,11 @@
           </div>
         </div>
       </div>
+    </section>
+    <!-- O projektu block -->
+    <section class="oProjektu" id="oProjektu">
+      <div class="oProjektu__imageContainer"></div>
+      <h3 class="layer">Parallax</h3>
     </section>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci earum,
