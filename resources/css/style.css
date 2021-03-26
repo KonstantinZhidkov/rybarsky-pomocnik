@@ -1259,32 +1259,19 @@ ul.podrobnosti__values>li {
 
 /* O projektu block */
 
-.oProjektu {
+/* Parallax */
+#scene {
   position: relative;
   width: 100%;
-  height: 70vh;
+  height: 75vh;
   overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #000;
 }
 
-.oProjektu__imageContainer {
+.oProjektu__parallaxImage {
   width: 100%;
-  max-height: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
 }
 
-.oProjektu__imageContainer>* {
-  width: 150px;
-  height: 150px;
-  margin: 100px;
-  transition: all 0.2s ease-in-out 0s;
-}
-
-h3.layer {
-  position: absolute;
-  font-size: 12em;
+p.lorem {
+  position: relative;
 }
