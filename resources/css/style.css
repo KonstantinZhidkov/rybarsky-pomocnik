@@ -106,7 +106,7 @@ body {
 
 /* Navigace pro mobilní zařízení */
 
-@media only screen and (max-width: 1119px) {
+@media only screen and (max-width: 1365px) {
   .header__body {
     height: 80px;
   }
@@ -128,7 +128,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 999px) {
+@media only screen and (max-width: 1230px) {
   .header__logo {
     margin-right: 20px;
     flex-shrink: 1;
@@ -1259,19 +1259,346 @@ ul.podrobnosti__values>li {
 
 /* O projektu block */
 
-/* Parallax */
+.oProjektu {
+  width: 100%;
+  height: 85vh;
+  position: relative;
+}
+
+.oProjektu__contentContainer {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  color: white;
+}
+
+.popisProjektu,
+.vybaveniProjektu {
+  width: 50%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.popisProjektu {
+  padding: 50px 30px;
+}
+
+.vybaveniProjektu {
+  padding: 10px 0px;
+}
+
+.popisProjektu__header,
+.vybaveniProjektu__header {
+  font-size: 2em;
+  font-family: "Righteous", sans-serif;
+  color: #e7e4e4;
+  opacity: 0.8;
+}
+
+.popisProjektu__header {
+  margin-bottom: 50px;
+}
+
+.vybaveniProjektu__header {
+  margin: 30px 0px;
+}
+
+.popisProjektu__body {
+  text-align: center;
+  font-family: 'Courgette', sans-serif;
+  font-size: 1.4em;
+  line-height: 1.5;
+  letter-spacing: 1.8px;
+  color: #e7e4e4;
+}
+
+.vybaveniProjektu__body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.vybaveniProjektu__body>* {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.vybaveniProjektu__prutImage,
+.vybaveniProjektu__navijakImage,
+.vybaveniProjektu__snuraImage,
+.vybaveniProjektu__sonarImage {
+  max-width: 100%;
+  height: 80%;
+  display: block;
+  object-fit: contain;
+}
+
+.vybaveniProjektu__prutPopis,
+.vybaveniProjektu__navijakPopis,
+.vybaveniProjektu__snuraPopis,
+.vybaveniProjektu__sonarPopis {
+  max-width: 100%;
+  height: 20%;
+  text-align: center;
+  word-spacing: -5px;
+  font-family: "SourceCodePro", sans-serif;
+  font-size: 1.1em;
+  color: #e7e4e4;
+}
+
 #scene {
   position: relative;
   width: 100%;
-  height: 75vh;
+  height: 100%;
   overflow: hidden;
-  background-color: #000;
+  background-color: #130d17;
+}
+
+@-moz-document url-prefix() {
+  #scene {
+    background-color: #101218;
+  }
 }
 
 .oProjektu__parallaxImage {
   width: 100%;
 }
 
-p.lorem {
+/* O projektu block (media) */
+
+@media only screen and (max-height: 960px),
+(max-width: 1366px) {
+
+  .popisProjektu__body {
+    font-size: 1.1em;
+  }
+
+  .vybaveniProjektu__header {
+    margin: 10px 0px 0px 0px;
+  }
+
+  .vybaveniProjektu__body>* {
+    width: 200px;
+    height: 200px;
+  }
+
+  .vybaveniProjektu__prutPopis,
+  .vybaveniProjektu__navijakPopis,
+  .vybaveniProjektu__snuraPopis,
+  .vybaveniProjektu__sonarPopis {
+    font-size: 0.85em;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  .oProjektu__contentContainer {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .popisProjektu,
+  .vybaveniProjektu {
+    width: 100%;
+    min-height: 50%;
+  }
+
+  .vybaveniProjektu__header {
+    margin-bottom: 20px;
+  }
+
+  .vybaveniProjektu__body>* {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media only screen and (max-height: 1230px) and (orientation: portrait) {
+  .popisProjektu {
+    padding: 20px 30px;
+  }
+
+  .popisProjektu__header,
+  .vybaveniProjektu__header {
+    font-size: 1.8em;
+  }
+
+  .popisProjektu__header {
+    margin-bottom: 20px;
+  }
+
+  .vybaveniProjektu__body>* {
+    width: 200px;
+    height: 200px;
+  }
+
+  .popisProjektu__body {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .oProjektu__contentContainer {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .popisProjektu__header {
+    margin-bottom: 30px;
+  }
+
+  .vybaveniProjektu {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 465px) {
+  .popisProjektu {
+    padding: 15px;
+  }
+
+  .popisProjektu__header {
+    margin-bottom: 15px;
+    font-size: 1.6em;
+  }
+
+  .popisProjektu__body {
+    font-size: 0.9em;
+  }
+}
+
+/* Footer */
+
+.footer {
   position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #e7e4e4;
+  background-color: #071a1d;
+}
+
+.footer__logoImage {
+  max-width: 100%;
+  height: 60px;
+  margin: 10px 0px;
+  display: block;
+}
+
+.socials {
+  display: flex;
+}
+
+.socials__item {
+  list-style: none;
+}
+
+.socials__link {
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+  font-size: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e7e4e4;
+  text-decoration: none;
+  color: #443726;
+  opacity: 0.8;
+  transition: 0.4s;
+}
+
+.socials__link:hover {
+  color: #18b6ff;
+  opacity: 1;
+  transform: translateY(-12px);
+}
+
+.footer__copyRight {
+  font-family: "SourceCodePro", sans-serif;
+  word-spacing: -4px;
+  font-size: 1.2em;
+  color: #443726;
+}
+
+/* Footer media */
+
+@media only screen and (max-width: 1366px) {
+  .footer__logoImage {
+    height: 50px;
+  }
+
+  .socials__link {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .socials__link:hover {
+    transform: translateY(-10px);
+  }
+
+  .footer__copyRight {
+    word-spacing: -4px;
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .footer__logoImage {
+    height: 40px;
+  }
+
+  .socials__link {
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+    font-size: 16px;
+  }
+
+  .socials__link:hover {
+    transform: translateY(-8px);
+  }
+
+  .footer__copyRight {
+    font-size: 0.9em;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .footer__logo {
+    display: none;
+  }
+
+  .footer {
+    justify-content: space-evenly;
+  }
+
+  .footer__copyRight {
+    word-spacing: -3px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .socials__link {
+    margin: 10px 9px;
+  }
+
+  .footer__copyRight {
+    font-size: 0.65em;
+    margin: 10px;
+    text-align: center;
+  }
 }
