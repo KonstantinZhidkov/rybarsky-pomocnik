@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rybářský Pomocník</title>
   <link rel="stylesheet" href="./resources/css/normalize.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="./resources/css/style.css">
@@ -49,38 +50,41 @@
     <section class="fog"></section>
   </div>
   <main class="main">
-    <!-- Rotační galerie -->
-    <div class="gallery__wrapper">
-      <section class="gallery">
-        <!-- Každý span má style="--i:číslo;" (css variable) pro stylování pomocí css -->
-        <span class="gallery__item" style="--i:1;">
-          <img class="gallery__image" src="./resources/images/rotating-gallery-images/kapr.jpg" alt="kapr">
-        </span>
-        <span class="gallery__item" style="--i:2;">
-          <img class="gallery__image" src="./resources/images/rotating-gallery-images/sumec.jpg" alt="sumec velký">
-        </span>
-        <span class="gallery__item" style="--i:3;">
-          <img class="gallery__image" src="./resources/images/rotating-gallery-images/pstruh_obecny.jpg"
-            alt="pstruh obecny">
-        </span>
-        <span class="gallery__item" style="--i:4;">
-          <img class="gallery__image" src="./resources/images/rotating-gallery-images/stika.jpg" alt="štika">
-        </span>
-        <span class="gallery__item" style="--i:5;">
-          <img class="gallery__image" src="./resources/images/rotating-gallery-images/jelec_tloust.jpg"
-            alt="jelec tloušť">
-        </span>
-        <span class="gallery__item" style="--i:6;">
-          <img class="gallery__image" src="./resources/images/rotating-gallery-images/duhak_maly.jpg" alt="duhák">
-        </span>
-        <span class="gallery__item" style="--i:7;">
-          <img class="gallery__image" src="./resources/images/rotating-gallery-images/duhak.jpg" alt="duhák">
-        </span>
-        <span class="gallery__item" style="--i:8;">
-          <img class="gallery__image" src="./resources/images/rotating-gallery-images/okoun.jpg" alt="okoun">
-        </span>
-      </section>
-    </div>
+    <!-- Galerie (Swiper.js) -->
+    <section class="swiper">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="swiper__image" src="./resources/images/rotating-gallery-images/kapr.jpg" alt="kapr">
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper__image" src="./resources/images/rotating-gallery-images/sumec.jpg" alt="sumec velký">
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper__image" src="./resources/images/rotating-gallery-images/pstruh_obecny.jpg"
+              alt="pstruh obecny">
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper__image" src="./resources/images/rotating-gallery-images/stika.jpg" alt="štika">
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper__image" src="./resources/images/rotating-gallery-images/jelec_tloust.jpg"
+              alt="jelec tloušť">
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper__image" src="./resources/images/rotating-gallery-images/duhak_maly.jpg" alt="duhák">
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper__image" src="./resources/images/rotating-gallery-images/duhak.jpg" alt="duhák">
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper__image" src="./resources/images/rotating-gallery-images/okoun.jpg" alt="okoun">
+          </div>
+        </div>
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
     <!-- Pstruhové rybářské revíry -->
     <section class="cardBox pstruhove" id="pstruhove">
       <h2 class="cardBox__header cardBox__header-transparent pstruhove__header-transparent">Pstruhové revíry</h2>
@@ -546,6 +550,7 @@
 
   <script src="./resources/libs/jquery-3.5.1.min.js"></script>
   <script src="./resources/js/main-jQuery.js"></script>
+  <script src="./resources/libs/swiper-bundle.min.js"></script>
   <script src="./resources/libs/parallax.min.js"></script>
   <script src="./resources/js/main-vanilla.js"></script>
 </body>
