@@ -39,7 +39,7 @@ body {
   position: relative;
   min-height: 100vh;
   width: 100%;
-  background: url("../images/background-images/rybar-na-lodi.jpg") 50% 50% / cover no-repeat;
+  background: url("../images/background-images/rybar-na-lodi.webp") 50% 50% / cover no-repeat;
 }
 
 /* Navigace */
@@ -301,7 +301,7 @@ body {
   left: 0;
   width: 100%;
   height: 100vh;
-  background-image: url('../images/background-images/fog.png');
+  background-image: url('../images/background-images/fog.webp');
   background-size: cover;
   animation: animateFog 90s linear infinite;
 }
@@ -827,7 +827,7 @@ body {
   min-height: 92vh;
   width: 100%;
   display: flex;
-  background: url("../images/background-images/pocasi-background.jpg") 50% 50% / cover no-repeat;
+  background: url("../images/background-images/pocasi-background.webp") 50% 50% / cover no-repeat;
 }
 
 .pocasi__main {
