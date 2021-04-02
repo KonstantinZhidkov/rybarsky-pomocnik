@@ -1434,6 +1434,10 @@ ul.podrobnosti__values>li {
   transition: 0.4s;
 }
 
+.socials__link svg {
+  height: 28px;
+}
+
 .socials__link:hover {
   color: #18b6ff;
   opacity: 1;
@@ -1460,6 +1464,10 @@ ul.podrobnosti__values>li {
     font-size: 20px;
   }
 
+  .socials__link svg {
+    height: 23px;
+  }
+
   .socials__link:hover {
     transform: translateY(-10px);
   }
@@ -1480,6 +1488,10 @@ ul.podrobnosti__values>li {
     height: 30px;
     margin: 15px;
     font-size: 16px;
+  }
+
+  .socials__link svg {
+    height: 18px;
   }
 
   .socials__link:hover {
