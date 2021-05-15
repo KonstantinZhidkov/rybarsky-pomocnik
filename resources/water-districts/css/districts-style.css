@@ -1,0 +1,8 @@
+body {
+    min-height: 100vh;
+}
+
+.homepage__wrapper {
+    background: #999;
+    min-height: calc(100vh - 91px);
+}
