@@ -1,8 +1,70 @@
-body {
+.homepage__wrapper {
+    min-height: 0;
+}
+
+.revirGallery {
+    position: relative;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
 }
 
-.homepage__wrapper {
-    background: #999;
-    min-height: calc(100vh - 91px);
+.revirGallery__header {
+    min-height: 10%;
+}
+
+.revirGallery__container {
+    min-height: 90%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.revirGallery__contentBox {
+    position: relative;
+    height: 800px;
+    width: 185px;
+    overflow: hidden;
+}
+
+.revirGallery__imageBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+}
+
+.revirGallery__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.revirGallery__imageBox.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.revirGallery__imageBox.active .revirGallery__image {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    right: 50px;
+    bottom: 50px;
+    width: calc(100% - 100px);
+    height: calc(100% - 100px);
 }
