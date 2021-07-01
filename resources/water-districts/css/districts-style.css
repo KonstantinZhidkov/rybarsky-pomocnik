@@ -1,23 +1,85 @@
+@font-face {
+    font-family: 'SourceCodePro';
+    src: url('../../fonts/SourceCodePro-Bold.eot');
+    src: local('☺'), url('../../fonts/SourceCodePro-Bold.woff') format('woff'), url('../../fonts/SourceCodePro-Bold.ttf') format('truetype'), url('../../fonts/SourceCodePro-Bold.svg') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Courgette';
+    src: url('../../fonts/Courgette-Regular.eot');
+    src: local('☺'), url('../../fonts/Courgette-Regular.woff') format('woff'), url('../../fonts/Courgette-Regular.ttf') format('truetype'), url('../../fonts/Courgette-Regular.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Righteous';
+    src: url('../../fonts/Righteous.eot');
+    src: local('☺'), url('../../fonts/Righteous.woff') format('woff'), url('../../fonts/Righteous.ttf') format('truetype'), url('../../fonts/Righteous.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
 .homepage__wrapper {
     min-height: 0;
 }
 
 .revirGallery {
     position: relative;
-    margin-top: 100px;
+    margin-top: 90px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    background: url(../../images/background-images/water-districts-bg-image.webp) 50% 50% / cover no-repeat;
 }
 
 .revirGallery__header {
-    min-height: 10%;
+    position: relative;
+    padding: 100px 0 50px 0;
+}
+
+.revirGallery__headerItem {
+    position: relative;
+    display: inline-block;
+    color: #e7e4e4;
+    font-size: 1.3em;
+    font-family: "SourceCodePro", sans-serif;
+    animation: wavyAnimate 1.5s ease-in-out infinite;
+    animation-delay: calc(50ms * var(--i));
+}
+
+@keyframes wavyAnimate {
+    0% {
+        transform: translateY(0px);
+    }
+
+    20% {
+        transform: translateY(-20px);
+    }
+
+    40%, 100% {
+        transform: translateY(0px);
+    }
+}
+
+.revirGallery__instruction {
+    width: 100%;
+    max-width: 1320px;
+    margin-bottom: 20px;
+    color: #e7e4e4;
+    font-size: 1.5em;
+    font-family: "SourceCodePro", sans-serif;
 }
 
 .revirGallery__container {
-    min-height: 90%;
+    width: 100%;
+    max-width: 1320px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -26,31 +88,34 @@
 
 .revirGallery__contentBox {
     position: relative;
-    height: 800px;
-    width: 185px;
+    max-height: 800px;
+    height: 100%;
+    width: 220px;
     overflow: hidden;
 }
 
+.revirGallery__contentBox:hover {
+
+}
+
 .revirGallery__imageBox {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    max-height: 100%;
     background-color: rgba(0, 0, 0, 0.9);
     cursor: pointer;
 }
 
 .revirGallery__image {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: contain;
 }
 
-.revirGallery__imageBox.active {
+/*.revirGallery__imageBox.active {
     position: fixed;
     top: 0;
     left: 0;
@@ -67,4 +132,101 @@
     bottom: 50px;
     width: calc(100% - 100px);
     height: calc(100% - 100px);
+}*/
+
+/* Tabs */
+
+.revirGallery__description {
+    width: 100%;
+    max-width: 1320px;
+    margin-bottom: 100px;
+}
+
+.revirGallery__navigation {
+    display: flex;
+}
+
+.revirGallery__navigationItem {
+    height: 70px;
+    display: flex;
+    flex: 0 1 50%;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-family: "SourceCodePro", sans-serif;
+    text-decoration: none;
+    background-color: #e7e4e4;
+    color: #443726;
+}
+
+.revirGallery__navigationItem-active {
+    background-color: #19140c;
+    color: #e7e4e4;
+}
+
+.revirGallery__tab {
+    padding: 30px;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 1.4px;
+    background-color: #19140c;
+    color: #e7e4e4;
+    font-family: "Courgette", sans-serif;
+    display: none;
+}
+
+.revirGallery__tab-active {
+    display: block;
+}
+
+/* Popup */
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.8s ease 0s;
+}
+
+.popup.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup__body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+.popup__content {
+    position: relative;
+    max-width: 800px;
+    padding: 30px;
+    background-color: #e7e4e4;
+    color: #443726;
+    opacity: 0;
+    transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+    transition: all 0.8s ease 0s;
+}
+
+.popup.open .popup__content {
+    opacity: 1;
+    transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+}
+
+.popup__close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #443726;
 }
