@@ -25,6 +25,10 @@
     font-display: swap;
 }
 
+body.lock {
+    overflow: hidden;
+}
+
 .homepage__wrapper {
     min-height: 0;
 }
