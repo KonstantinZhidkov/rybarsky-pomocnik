@@ -119,25 +119,6 @@ body.lock {
     object-fit: contain;
 }
 
-/*.revirGallery__imageBox.active {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 100;
-}
-
-.revirGallery__imageBox.active .revirGallery__image {
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    right: 50px;
-    bottom: 50px;
-    width: calc(100% - 100px);
-    height: calc(100% - 100px);
-}*/
-
 /* Tabs */
 
 .revirGallery__description {
@@ -221,6 +202,12 @@ body.lock {
     transition: all 0.8s ease 0s;
 }
 
+.popup__image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
 .popup.open .popup__content {
     opacity: 1;
     transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
@@ -234,3 +221,8 @@ body.lock {
     text-decoration: none;
     color: #443726;
 }
+
+/* Mobilní zařízení */
+
+/*
+@media only screen and (max-width: )*/
