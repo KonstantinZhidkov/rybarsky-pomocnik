@@ -4,6 +4,7 @@ block variables
     - var scriptSrc = 'revir_473051.js'
 
 block content
+    .galleryMargin
     section.revirGallery
         h2.revirGallery__header
             span.revirGallery__headerItem(style="--i:1;") 4
@@ -27,26 +28,26 @@ block content
             span.revirGallery__headerItem(style="--i:19;") &nbsp;
             span.revirGallery__headerItem(style="--i:20;") 1
             span.revirGallery__headerItem(style="--i:21;") P
-        h3.revirGallery__instruction Zvolte si na mapě úsek revíru:
+        h3.revirGallery__instruction Zvolte si úsek revíru na mapě:
         .revirGallery__container
             .revirGallery__contentBox
                 .revirGallery__imageBox
-                    img.revirGallery__image#1(src='../../districts-images/revir_473051/1.jpg')
+                    img.revirGallery__image#1(src='../../districts-images/revir_473051/473051_1.jpg')
             .revirGallery__contentBox
                 .revirGallery__imageBox
-                    img.revirGallery__image#2(src='../../districts-images/revir_473051/2.jpg')
+                    img.revirGallery__image#2(src='../../districts-images/revir_473051/473051_2.jpg')
             .revirGallery__contentBox
                 .revirGallery__imageBox
-                    img.revirGallery__image#3(src='../../districts-images/revir_473051/3.jpg')
+                    img.revirGallery__image#3(src='../../districts-images/revir_473051/473051_3.jpg')
             .revirGallery__contentBox
                 .revirGallery__imageBox
-                    img.revirGallery__image#4(src='../../districts-images/revir_473051/4.jpg')
+                    img.revirGallery__image#4(src='../../districts-images/revir_473051/473051_4.jpg')
             .revirGallery__contentBox
                 .revirGallery__imageBox
-                    img.revirGallery__image#5(src='../../districts-images/revir_473051/5.jpg')
+                    img.revirGallery__image#5(src='../../districts-images/revir_473051/473051_5.jpg')
             .revirGallery__contentBox
                 .revirGallery__imageBox
-                    img.revirGallery__image#6(src='../../districts-images/revir_473051/6.jpg')
+                    img.revirGallery__image#6(src='../../districts-images/revir_473051/473051_6.jpg')
         .revirGallery__description
             nav.revirGallery__navigation
                 a.revirGallery__navigationItem(href="#tab_01") Popis revíru
@@ -75,5 +76,6 @@ block content
     .popup#popup
         .popup__body
             .popup__content
-                a.popup__close(href="") X
+                .popup__closeContainer
+                    a.popup__close(href="") X
                 img.popup__image(src='')

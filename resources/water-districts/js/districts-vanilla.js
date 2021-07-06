@@ -22,19 +22,6 @@ headerList.onmouseenter = () => {
     headerUnderline.style.visibility = 'visible';
 }
 
-// Sticky navigation 10px gap fix
-/*window.addEventListener('scroll', () => {
-    const top = window.pageYOffset;
-    let headerHeight = window.getComputedStyle(document.querySelector('.header__body').height);
-
-    document.querySelector('.revirGallery').style.marginTop = headerHeight;*/
-/*    if (top == 0) {
-        document.querySelector('.revirGallery').style.marginTop = '80px';
-    } else {
-        document.querySelector('.revirGallery').style.marginTop = '90px';
-    }*/
-/*});*/
-
 // Tabs
 document.querySelectorAll('.revirGallery__navigationItem').forEach(item => {
    item.addEventListener('click', function (event) {
@@ -69,7 +56,7 @@ revirGalleryImages.forEach(image => {
     image.addEventListener('click', function (event) {
         switch (event.target.id) {
             case '1':
-                popupImage.setAttribute('src', '../../districts-images/revir_473051/deeper-test.jpg');
+                popupImage.setAttribute('src', '../../districts-images/revir_473051/473051_1-1.png');
                 break;
         }
 
@@ -131,39 +118,3 @@ document.addEventListener('keydown', function(event) {
         popupClose(document.querySelector('.popup.open'));
     }
 })
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-const revirGalleryImages = document.querySelectorAll('.revirGallery__image');
-
-revirGalleryImages.forEach(item => {
-   item.addEventListener('click', function(event) {
-       event.target.classList.add('popup');
-
-       switch (event.target.id) {
-           case '1':
-               event.target.attributes.src.nodeValue = '../../districts-images/revir_473051/deeper-test.jpg';
-               break;
-       }
-
-       if(!event.target.classList.contains('popup') && event.target.parentNode.classList.contains('active')) {
-           switch (event.target.id) {
-                 case '1':
-                   event.target.attributes.src.nodeValue = '../../districts-images/revir_473051/1.jpg';
-                   break;
-           }
-       }
-
-       console.log(event.target)
-   });
-});*/
