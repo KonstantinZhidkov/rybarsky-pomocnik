@@ -58,6 +58,21 @@ revirGalleryImages.forEach(image => {
             case '1':
                 popupImage.setAttribute('src', '../../districts-images/revir_473051/473051_1-1.png');
                 break;
+            case '2':
+                popupImage.setAttribute('src', '../../districts-images/revir_473051/473051_2-2.png');
+                break;
+            case '3':
+                popupImage.setAttribute('src', '../../districts-images/revir_473051/473051_3-3.png');
+                break;
+            case '4':
+                popupImage.setAttribute('src', '../../districts-images/revir_473051/473051_4-4.png');
+                break;
+            case '5':
+                popupImage.setAttribute('src', '../../districts-images/revir_473051/473051_5-5.png');
+                break;
+            case '6':
+                popupImage.setAttribute('src', '../../districts-images/revir_473051/473051_6-6.png');
+                break;
         }
 
         popupOpen(popup);

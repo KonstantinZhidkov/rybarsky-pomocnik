@@ -286,6 +286,15 @@ body.lock {
         line-height: 22px;
         letter-spacing: 1.2px;
     }
+
+    .popup__closeContainer {
+        min-height: 26px;
+    }
+
+    .popup__close {
+        width: 40px;
+        font-size: 20px;
+    }
 }
 
 @media only screen and (max-width: 450px) {
@@ -311,5 +320,14 @@ body.lock {
         font-size: 12px;
         line-height: 17px;
         letter-spacing: 1.1px;
+    }
+
+    .popup__closeContainer {
+        min-height: 22px;
+    }
+
+    .popup__close {
+        width: 35px;
+        font-size: 17px;
     }
 }
