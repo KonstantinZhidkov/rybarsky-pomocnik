@@ -1,0 +1,75 @@
+extends ../../layout/main
+
+block variables
+    - var scriptSrc = 'revir_473087.js'
+
+block content
+    .galleryMargin
+    section.revirGallery
+        h2.revirGallery__header
+            span.revirGallery__headerItem(style="--i:1;") 4
+            span.revirGallery__headerItem(style="--i:2;") 7
+            span.revirGallery__headerItem(style="--i:3;") 3
+            span.revirGallery__headerItem(style="--i:4;") &nbsp;
+            span.revirGallery__headerItem(style="--i:5;") 0
+            span.revirGallery__headerItem(style="--i:6;") 8
+            span.revirGallery__headerItem(style="--i:7;") 7
+            span.revirGallery__headerItem(style="--i:8;") &nbsp;
+            span.revirGallery__headerItem(style="--i:9;") -
+            span.revirGallery__headerItem(style="--i:10;") &nbsp;
+            span.revirGallery__headerItem(style="--i:11;") S
+            span.revirGallery__headerItem(style="--i:12;") i
+            span.revirGallery__headerItem(style="--i:13;") t
+            span.revirGallery__headerItem(style="--i:14;") k
+            span.revirGallery__headerItem(style="--i:15;") a
+            span.revirGallery__headerItem(style="--i:16;") &nbsp;
+            span.revirGallery__headerItem(style="--i:17;") 2
+        h3.revirGallery__instruction Zvolte si úsek revíru na mapě:
+        .revirGallery__container
+            .revirGallery__contentBox
+                .revirGallery__imageBox
+                    img.revirGallery__image#1(src='../../districts-images/revir_473051/473051_1.jpg')
+            .revirGallery__contentBox
+                .revirGallery__imageBox
+                    img.revirGallery__image#2(src='../../districts-images/revir_473051/473051_2.jpg')
+            .revirGallery__contentBox
+                .revirGallery__imageBox
+                    img.revirGallery__image#3(src='../../districts-images/revir_473051/473051_3.jpg')
+            .revirGallery__contentBox
+                .revirGallery__imageBox
+                    img.revirGallery__image#4(src='../../districts-images/revir_473051/473051_4.jpg')
+            .revirGallery__contentBox
+                .revirGallery__imageBox
+                    img.revirGallery__image#5(src='../../districts-images/revir_473051/473051_5.jpg')
+            .revirGallery__contentBox
+                .revirGallery__imageBox
+                    img.revirGallery__image#6(src='../../districts-images/revir_473051/473051_6.jpg')
+        .revirGallery__description
+            nav.revirGallery__navigation
+                a.revirGallery__navigationItem(href="#tab_01") Popis revíru
+                a.revirGallery__navigationItem(href="#tab_02") Vlastnosti revíru
+            .revirGallery__tabs
+                #tab_01.revirGallery__tab
+                    | Přítok Oskavy, Moravy. Od jezu nad nádrží Delta ve Šternberku až k pramenům včetně potoka Tepličky od jezu v Haukovicích až k pramenům včetně přítoků.
+                    br
+                    | Přítoky Sprchový, Dálovský, Arnoltický, Teplička v horním úseku (vyznačeno tabulemi) a Sitka od silničního mostu ve Veveří až k pramenům jsou CHRO - lov ryb zakázán.
+                    br
+                    | K revíru nepatří dvě dolní nádrže pod koupalištěm Dolní Žleb a 4 revitalizační tůně na přítocích do koupaliště Dolní Žleb, ani koupaliště Dolní Žleb.
+                #tab_02.revirGallery__tab
+                    | Číslo revíru: 473 087
+                    br
+                    | GPS Z: 49°43‘25.952“N, 17°17‘9.764“E, K: 49°50‘48.031“N, 17°19‘46.422“E
+                    br
+                    | Rozloha revíru: 24 km, 9 ha
+                    br
+                    | Typ revíru: pstruhový revír
+                    br
+                    | Uživatel revíru: Moravskoslezský ÚS
+                    br
+                    | Organizace pověřená hospodařením: MO Šternberk
+    .popup#popup
+        .popup__body
+            .popup__content
+                .popup__closeContainer
+                    a.popup__close(href="") X
+                img.popup__image(src='')

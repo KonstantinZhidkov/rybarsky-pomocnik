@@ -1,0 +1,72 @@
+extends ../../layout/main
+
+block variables
+    - var scriptSrc = 'revir_473059.js'
+
+block content
+    .galleryMargin
+    section.revirGallery
+        h2.revirGallery__header
+            span.revirGallery__headerItem(style="--i:1;") 4
+            span.revirGallery__headerItem(style="--i:2;") 7
+            span.revirGallery__headerItem(style="--i:3;") 3
+            span.revirGallery__headerItem(style="--i:4;") &nbsp;
+            span.revirGallery__headerItem(style="--i:5;") 0
+            span.revirGallery__headerItem(style="--i:6;") 5
+            span.revirGallery__headerItem(style="--i:7;") 9
+            span.revirGallery__headerItem(style="--i:8;") &nbsp;
+            span.revirGallery__headerItem(style="--i:9;") -
+            span.revirGallery__headerItem(style="--i:10;") &nbsp;
+            span.revirGallery__headerItem(style="--i:11;") O
+            span.revirGallery__headerItem(style="--i:12;") d
+            span.revirGallery__headerItem(style="--i:13;") r
+            span.revirGallery__headerItem(style="--i:14;") a
+            span.revirGallery__headerItem(style="--i:15;") &nbsp;
+            span.revirGallery__headerItem(style="--i:16;") 8
+        h3.revirGallery__instruction Zvolte si úsek revíru na mapě:
+        .revirGallery__container
+            .revirGallery__contentBox
+                .revirGallery__imageBox
+                    img.revirGallery__image#1(src='../../districts-images/revir_473051/473051_1.jpg')
+            .revirGallery__contentBox
+                .revirGallery__imageBox
+                    img.revirGallery__image#2(src='../../districts-images/revir_473051/473051_2.jpg')
+            .revirGallery__contentBox
+                .revirGallery__imageBox
+                    img.revirGallery__image#3(src='../../districts-images/revir_473051/473051_3.jpg')
+            .revirGallery__contentBox
+                .revirGallery__imageBox
+                    img.revirGallery__image#4(src='../../districts-images/revir_473051/473051_4.jpg')
+            .revirGallery__contentBox
+                .revirGallery__imageBox
+                    img.revirGallery__image#5(src='../../districts-images/revir_473051/473051_5.jpg')
+            .revirGallery__contentBox
+                .revirGallery__imageBox
+                    img.revirGallery__image#6(src='../../districts-images/revir_473051/473051_6.jpg')
+        .revirGallery__description
+            nav.revirGallery__navigation
+                a.revirGallery__navigationItem(href="#tab_01") Popis revíru
+                a.revirGallery__navigationItem(href="#tab_02") Vlastnosti revíru
+            .revirGallery__tabs
+                #tab_01.revirGallery__tab
+                    | Od jezu pily v obci Loučka až k ústí Budišovky mimo Budišovku, včetně všech přítoků.
+                    br
+                    | Všechny přítoky a horní část revíru od soutoku s potokem Něčín až po soutok s Budišovkou jsou CHRO - lov ryb zakázán.
+                #tab_02.revirGallery__tab
+                    | Číslo revíru: 473 059
+                    br
+                    | GPS Z: 49°40'27.61"N, 17°49'04.23"E, K: 49°44'6.663"N, 17°41'37.734"E
+                    br
+                    | Rozloha revíru: 15 km, 19 ha
+                    br
+                    | Typ revíru: pstruhový revír
+                    br
+                    | Uživatel revíru: Moravskoslezský ÚS
+                    br
+                    | Organizace pověřená hospodařením: MO Vítkov
+    .popup#popup
+        .popup__body
+            .popup__content
+                .popup__closeContainer
+                    a.popup__close(href="") X
+                img.popup__image(src='')

@@ -1,0 +1,77 @@
+extends ../../layout/main
+
+block variables
+    - var scriptSrc = 'revir_473050.js'
+
+block content
+    .galleryMargin
+    section.revirGallery
+        h2.revirGallery__header
+            span.revirGallery__headerItem(style="--i:1;") 4
+            span.revirGallery__headerItem(style="--i:2;") 7
+            span.revirGallery__headerItem(style="--i:3;") 3
+            span.revirGallery__headerItem(style="--i:4;") &nbsp;
+            span.revirGallery__headerItem(style="--i:5;") 0
+            span.revirGallery__headerItem(style="--i:6;") 5
+            span.revirGallery__headerItem(style="--i:7;") 0
+            span.revirGallery__headerItem(style="--i:8;") &nbsp;
+            span.revirGallery__headerItem(style="--i:9;") -
+            span.revirGallery__headerItem(style="--i:10;") &nbsp;
+            span.revirGallery__headerItem(style="--i:11;") M
+            span.revirGallery__headerItem(style="--i:12;") o
+            span.revirGallery__headerItem(style="--i:13;") r
+            span.revirGallery__headerItem(style="--i:14;") a
+            span.revirGallery__headerItem(style="--i:15;") v
+            span.revirGallery__headerItem(style="--i:16;") a
+            span.revirGallery__headerItem(style="--i:17;") &nbsp;
+            span.revirGallery__headerItem(style="--i:18;") 2
+            span.revirGallery__headerItem(style="--i:19;") 3
+        h3.revirGallery__instruction Zvolte si úsek revíru na mapě:
+        .revirGallery__container
+            .revirGallery__contentBox
+                .revirGallery__imageBox
+                    img.revirGallery__image#1(src='../../districts-images/revir_473051/473051_1.jpg')
+            .revirGallery__contentBox
+                .revirGallery__imageBox
+                    img.revirGallery__image#2(src='../../districts-images/revir_473051/473051_2.jpg')
+            .revirGallery__contentBox
+                .revirGallery__imageBox
+                    img.revirGallery__image#3(src='../../districts-images/revir_473051/473051_3.jpg')
+            .revirGallery__contentBox
+                .revirGallery__imageBox
+                    img.revirGallery__image#4(src='../../districts-images/revir_473051/473051_4.jpg')
+            .revirGallery__contentBox
+                .revirGallery__imageBox
+                    img.revirGallery__image#5(src='../../districts-images/revir_473051/473051_5.jpg')
+            .revirGallery__contentBox
+                .revirGallery__imageBox
+                    img.revirGallery__image#6(src='../../districts-images/revir_473051/473051_6.jpg')
+        .revirGallery__description
+            nav.revirGallery__navigation
+                a.revirGallery__navigationItem(href="#tab_01") Popis revíru
+                a.revirGallery__navigationItem(href="#tab_02") Vlastnosti revíru
+            .revirGallery__tabs
+                #tab_01.revirGallery__tab
+                    | Od jezu mlýna u obce Chromeč až k ústí Krupé včetně všech náhonů a přítoků mimo řeku Branou a Krupou.
+                    br
+                    | Všechny přítoky a náhon od ústí do Moravy u Olšanských papíren až k jezu v Bartoňově jsou CHRO - lov ryb zakázán.
+                    br
+                    | Nejmenší lovná míra pstruha obecného je zvýšena na 30 cm.
+                #tab_02.revirGallery__tab
+                    | Číslo revíru: 473 050
+                    br
+                    | GPS Z: 49°56‘32.25“N, 16°54‘0.346“E, K: 50°5‘17.752“N, 16°55‘12.293“E
+                    br
+                    | Rozloha revíru: 20 km, 30 ha
+                    br
+                    | Typ revíru: pstruhový revír
+                    br
+                    | Uživatel revíru: Moravskoslezský ÚS
+                    br
+                    | Organizace pověřená hospodařením: MO Šumperk
+    .popup#popup
+        .popup__body
+            .popup__content
+                .popup__closeContainer
+                    a.popup__close(href="") X
+                img.popup__image(src='')
