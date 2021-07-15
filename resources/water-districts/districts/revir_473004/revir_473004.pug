@@ -1,0 +1,91 @@
+extends ../../layout/main
+
+block variables
+    - var scriptSrc = 'revir_473004.js'
+
+block content
+    .galleryMargin
+    section.revirGallery
+        h2.revirGallery__header
+            span.revirGallery__headerItem(style="--i:1;") 4
+            span.revirGallery__headerItem(style="--i:2;") 7
+            span.revirGallery__headerItem(style="--i:3;") 3
+            span.revirGallery__headerItem(style="--i:4;") &nbsp;
+            span.revirGallery__headerItem(style="--i:5;") 0
+            span.revirGallery__headerItem(style="--i:6;") 0
+            span.revirGallery__headerItem(style="--i:7;") 4
+            span.revirGallery__headerItem(style="--i:8;") &nbsp;
+            span.revirGallery__headerItem(style="--i:9;") -
+            span.revirGallery__headerItem(style="--i:10;") &nbsp;
+            span.revirGallery__headerItem(style="--i:11;") B
+            span.revirGallery__headerItem(style="--i:12;") e
+            span.revirGallery__headerItem(style="--i:13;") č
+            span.revirGallery__headerItem(style="--i:14;") v
+            span.revirGallery__headerItem(style="--i:15;") a
+            span.revirGallery__headerItem(style="--i:16;") &nbsp;
+            span.revirGallery__headerItem(style="--i:17;") V
+            span.revirGallery__headerItem(style="--i:18;") s
+            span.revirGallery__headerItem(style="--i:19;") e
+            span.revirGallery__headerItem(style="--i:20;") t
+            span.revirGallery__headerItem(style="--i:21;") í
+            span.revirGallery__headerItem(style="--i:22;") n
+            span.revirGallery__headerItem(style="--i:23;") s
+            span.revirGallery__headerItem(style="--i:24;") k
+            span.revirGallery__headerItem(style="--i:25;") á
+            span.revirGallery__headerItem(style="--i:26;") &nbsp;
+            span.revirGallery__headerItem(style="--i:27;") 2
+        h3.revirGallery__instruction Zvolte si úsek revíru na mapě:
+        .revirGallery__container
+            .revirGallery__contentBox
+                .revirGallery__imageBox
+                    img.revirGallery__image#1(src='../../districts-images/revir_473051/473051_1.jpg')
+            .revirGallery__contentBox
+                .revirGallery__imageBox
+                    img.revirGallery__image#2(src='../../districts-images/revir_473051/473051_2.jpg')
+            .revirGallery__contentBox
+                .revirGallery__imageBox
+                    img.revirGallery__image#3(src='../../districts-images/revir_473051/473051_3.jpg')
+            .revirGallery__contentBox
+                .revirGallery__imageBox
+                    img.revirGallery__image#4(src='../../districts-images/revir_473051/473051_4.jpg')
+            .revirGallery__contentBox
+                .revirGallery__imageBox
+                    img.revirGallery__image#5(src='../../districts-images/revir_473051/473051_5.jpg')
+            .revirGallery__contentBox
+                .revirGallery__imageBox
+                    img.revirGallery__image#6(src='../../districts-images/revir_473051/473051_6.jpg')
+        .revirGallery__description
+            nav.revirGallery__navigation
+                a.revirGallery__navigationItem(href="#tab_01") Popis revíru
+                a.revirGallery__navigationItem(href="#tab_02") Vlastnosti revíru
+            .revirGallery__tabs
+                #tab_01.revirGallery__tab
+                    | Přítok Bečvy, Moravy. Od silničního mostu Na Nové u nádraží v Bystřičce až k jezu ve Vsetíně včetně všech přítoků, mimo Rokytenku.
+                    br
+                    | Přítoky Ratibořka od soutoku s pravostranným přítokem Štěpková v k. ú. Hošťálková a Jasenice od soutoku s potokem Červenka ve Vsetíně-Jasenicích jsou až k pramenům CHRO - lov ryb zakázán.
+                    br
+                    | Všechny ostatní přítoky včetně náhonu od jezu ve Vsetíně po vtok do Rokytenky jsou CHRO - lov ryb zakázán.
+                    br
+                    | Zákaz lovu pod rybím přechodem - 10 m od vyústění rybího přechodu.
+                    br
+                    | Od 1. 9. je lov povolen pouze na hlavním toku.
+                    br
+                    | Nejmenší lovná míra pstruha obecného je zvýšena na 30 cm.
+                #tab_02.revirGallery__tab
+                    | Číslo revíru: 473 004
+                    br
+                    | GPS Z: 49°25‘9.391“N, 17°57‘34.849“E, K: 49°19‘29.199“N, 17°59‘48.483“E
+                    br
+                    | Rozloha revíru: 13 km, 22 ha
+                    br
+                    | Typ revíru: pstruhový revír
+                    br
+                    | Uživatel revíru: Moravskoslezský ÚS
+                    br
+                    | Organizace pověřená hospodařením: MO Vsetín
+    .popup#popup
+        .popup__body
+            .popup__content
+                .popup__closeContainer
+                    a.popup__close(href="") X
+                img.popup__image(src='')

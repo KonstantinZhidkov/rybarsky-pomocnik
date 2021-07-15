@@ -1,0 +1,76 @@
+extends ../../layout/main
+
+block variables
+    - var scriptSrc = 'revir_473044.js'
+
+block content
+    .galleryMargin
+    section.revirGallery
+        h2.revirGallery__header
+            span.revirGallery__headerItem(style="--i:1;") 4
+            span.revirGallery__headerItem(style="--i:2;") 7
+            span.revirGallery__headerItem(style="--i:3;") 3
+            span.revirGallery__headerItem(style="--i:4;") &nbsp;
+            span.revirGallery__headerItem(style="--i:5;") 0
+            span.revirGallery__headerItem(style="--i:6;") 4
+            span.revirGallery__headerItem(style="--i:7;") 4
+            span.revirGallery__headerItem(style="--i:8;") &nbsp;
+            span.revirGallery__headerItem(style="--i:9;") -
+            span.revirGallery__headerItem(style="--i:10;") &nbsp;
+            span.revirGallery__headerItem(style="--i:11;") L
+            span.revirGallery__headerItem(style="--i:12;") u
+            span.revirGallery__headerItem(style="--i:13;") č
+            span.revirGallery__headerItem(style="--i:14;") i
+            span.revirGallery__headerItem(style="--i:15;") n
+            span.revirGallery__headerItem(style="--i:16;") a
+            span.revirGallery__headerItem(style="--i:20;") &nbsp;
+            span.revirGallery__headerItem(style="--i:21;") 3
+        h3.revirGallery__instruction Zvolte si úsek revíru na mapě:
+        .revirGallery__container
+            .revirGallery__contentBox
+                .revirGallery__imageBox
+                    img.revirGallery__image#1(src='../../districts-images/revir_473051/473051_1.jpg')
+            .revirGallery__contentBox
+                .revirGallery__imageBox
+                    img.revirGallery__image#2(src='../../districts-images/revir_473051/473051_2.jpg')
+            .revirGallery__contentBox
+                .revirGallery__imageBox
+                    img.revirGallery__image#3(src='../../districts-images/revir_473051/473051_3.jpg')
+            .revirGallery__contentBox
+                .revirGallery__imageBox
+                    img.revirGallery__image#4(src='../../districts-images/revir_473051/473051_4.jpg')
+            .revirGallery__contentBox
+                .revirGallery__imageBox
+                    img.revirGallery__image#5(src='../../districts-images/revir_473051/473051_5.jpg')
+            .revirGallery__contentBox
+                .revirGallery__imageBox
+                    img.revirGallery__image#6(src='../../districts-images/revir_473051/473051_6.jpg')
+        .revirGallery__description
+            nav.revirGallery__navigation
+                a.revirGallery__navigationItem(href="#tab_01") Popis revíru
+                a.revirGallery__navigationItem(href="#tab_02") Vlastnosti revíru
+            .revirGallery__tabs
+                #tab_01.revirGallery__tab
+                    | Přítok Ostravice, Odry. Od betonového mostu přes řeku Lučinu v k. ú. Lučina až k pramenům včetně všech přítoků a přivaděče vody do Žermanické přehrady od zaústění do přehrady až po splav č. 18 - vyznačeno tabulemi.
+                    br
+                    | Úsek Lučiny od soutoku s přivaděčem až k pramenům a všechny přítoky jsou CHRO - lov ryb zakázán
+                    br
+                    | V dolní části revíru od betonového mostu přes řeku Lučinu v k.ú. Lučina až po pravostranný přítok Tošanůvka je lov ryb zakázán.
+                #tab_02.revirGallery__tab
+                    | Číslo revíru: 473 044
+                    br
+                    | GPS Z: 49°41‘40.698“N, 18°27‘44.515“E, K: 49°39‘2.301“N, 18°27‘6.398“E
+                    br
+                    | Rozloha revíru: 13 km, 13 ha
+                    br
+                    | Typ revíru: pstruhový revír
+                    br
+                    | Uživatel revíru: Moravskoslezský ÚS
+                    br
+                    | Organizace pověřená hospodařením: MO Lučina
+    .popup#popup
+        .popup__body
+            .popup__content
+                .popup__closeContainer
+                    a.popup__close(href="") X
+                img.popup__image(src='')

@@ -1287,6 +1287,10 @@ ul.podrobnosti__values>li {
   #scene {
     background-color: #101218;
   }
+
+  .vybaveniProjektu__body>* {
+    margin: 20px;
+  }
 }
 
 .oProjektu__parallaxImage {
