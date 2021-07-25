@@ -12,22 +12,22 @@ revirGalleryImages.forEach(image => {
     image.addEventListener('click', function (event) {
         switch (event.target.id) {
             case '1':
-                popupImage.setAttribute('src', '../../districts-images/revir_473052/473052_1-1.png');
+                popupImage.setAttribute('src', '../../districts-images/revir_473005/473005_1-1.png');
                 break;
             case '2':
-                popupImage.setAttribute('src', '../../districts-images/revir_473052/473052_2-2.png');
+                popupImage.setAttribute('src', '../../districts-images/revir_473005/473005_2-2.png');
                 break;
             case '3':
-                popupImage.setAttribute('src', '../../districts-images/revir_473052/473052_3-3.png');
+                popupImage.setAttribute('src', '../../districts-images/revir_473005/473005_3-3.png');
                 break;
             case '4':
-                popupImage.setAttribute('src', '../../districts-images/revir_473052/473052_4-4.png');
+                popupImage.setAttribute('src', '../../districts-images/revir_473005/473005_4-4.png');
                 break;
             case '5':
-                popupImage.setAttribute('src', '../../districts-images/revir_473052/473052_5-5.png');
+                popupImage.setAttribute('src', '../../districts-images/revir_473005/473005_5-5.png');
                 break;
             case '6':
-                popupImage.setAttribute('src', '../../districts-images/revir_473052/473052_6-6.png');
+                popupImage.setAttribute('src', '../../districts-images/revir_473005/473005_6-6.png');
                 break;
         }
 

@@ -90,7 +90,8 @@ body.lock {
     font-family: "SourceCodePro", sans-serif;
 }
 
-.revirGallery__container {
+.revirGallery__container,
+.revirGallery__container-mimopstruhovy {
     width: 100%;
     max-width: 1320px;
     display: flex;
@@ -98,10 +99,28 @@ body.lock {
     align-items: center;
 }
 
+.revirGallery__container-mimopstruhovy {
+    flex-direction: column;
+}
+
+.revirGallery__firstRow,
+.revirGallery__secondRow {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+}
+
 .revirGallery__contentBox {
     max-height: 800px;
     height: 100%;
     width: 220px;
+    overflow: hidden;
+}
+
+.revirGallery__contentBox-mimopstruhovy {
+    height: 100%;
+    max-width: 440px;
+    max-height: 400px;
     overflow: hidden;
 }
 
@@ -113,9 +132,15 @@ body.lock {
 }
 
 .revirGallery__image {
+    display: block;
     width: 100%;
     height: auto;
     object-fit: contain;
+}
+
+.revirGallery__image.image-mimopstruhovy:hover {
+    width: calc(100% - 2px);
+    border: 1px solid #e7e4e4;
 }
 
 .revirGallery__image:hover {
