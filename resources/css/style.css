@@ -1299,8 +1299,7 @@ ul.podrobnosti__values>li {
 
 /* O projektu block (media) */
 
-@media only screen and (max-height: 960px),
-(max-width: 1366px) {
+@media only screen and (max-height: 960px), (max-width: 1366px) {
 
   .popisProjektu__body {
     font-size: 1.1em;
@@ -1323,7 +1322,7 @@ ul.podrobnosti__values>li {
   }
 }
 
-@media only screen and (max-width: 1024px) and (orientation: portrait) {
+@media only screen and (max-width: 1024px) {
   .oProjektu__contentContainer {
     flex-direction: column;
     justify-content: space-evenly;
@@ -1340,12 +1339,12 @@ ul.podrobnosti__values>li {
   }
 
   .vybaveniProjektu__body>* {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
   }
 }
 
-@media only screen and (max-height: 1230px) and (orientation: portrait) {
+/*@media only screen and (max-height: 1230px) and (orientation: portrait) {
   .popisProjektu {
     padding: 20px 30px;
   }
@@ -1367,9 +1366,9 @@ ul.podrobnosti__values>li {
   .popisProjektu__body {
     font-size: 1em;
   }
-}
+}*/
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 960px), (max-height: 767px) {
   .oProjektu__contentContainer {
     justify-content: center;
     align-items: center;

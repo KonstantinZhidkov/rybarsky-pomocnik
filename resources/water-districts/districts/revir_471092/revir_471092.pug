@@ -1,0 +1,89 @@
+extends ../../layout/main
+
+block variables
+    - var scriptSrc = 'revir_471092.js'
+
+block content
+    .galleryMargin
+    section.revirGallery
+        h2.revirGallery__header
+            span.revirGallery__headerItem(style="--i:1;") 4
+            span.revirGallery__headerItem(style="--i:2;") 7
+            span.revirGallery__headerItem(style="--i:3;") 1
+            span.revirGallery__headerItem(style="--i:4;") &nbsp;
+            span.revirGallery__headerItem(style="--i:5;") 0
+            span.revirGallery__headerItem(style="--i:6;") 9
+            span.revirGallery__headerItem(style="--i:7;") 2
+            span.revirGallery__headerItem(style="--i:8;") &nbsp;
+            span.revirGallery__headerItem(style="--i:9;") -
+            span.revirGallery__headerItem(style="--i:10;") &nbsp;
+            span.revirGallery__headerItem(style="--i:11;") O
+            span.revirGallery__headerItem(style="--i:12;") p
+            span.revirGallery__headerItem(style="--i:13;") a
+            span.revirGallery__headerItem(style="--i:14;") v
+            span.revirGallery__headerItem(style="--i:15;") a
+            span.revirGallery__headerItem(style="--i:16;") &nbsp;
+            span.revirGallery__headerItem(style="--i:17;") 2
+            span.revirGallery__headerItem(style="--i:18;") &nbsp;
+            span.revirGallery__headerItem(style="--i:19;") A
+        h3.revirGallery__instruction Zvolte si úsek revíru na mapě:
+        .revirGallery__container-mimopstruhovy
+            .revirGallery__firstRow
+                .revirGallery__contentBox-mimopstruhovy
+                    .revirGallery__imageBox
+                        img.revirGallery__image.image-mimopstruhovy#1(src='../../districts-images/revir_471092/471092_1.png')
+                .revirGallery__contentBox-mimopstruhovy
+                    .revirGallery__imageBox
+                        img.revirGallery__image.image-mimopstruhovy#2(src='../../districts-images/revir_471092/471092_2.png')
+                .revirGallery__contentBox-mimopstruhovy
+                    .revirGallery__imageBox
+                        img.revirGallery__image.image-mimopstruhovy#3(src='../../districts-images/revir_471092/471092_3.png')
+            .revirGallery__secondRow
+                .revirGallery__contentBox-mimopstruhovy
+                    .revirGallery__imageBox
+                        img.revirGallery__image.image-mimopstruhovy#4(src='../../districts-images/revir_471092/471092_4.png')
+                .revirGallery__contentBox-mimopstruhovy
+                    .revirGallery__imageBox
+                        img.revirGallery__image.image-mimopstruhovy#5(src='../../districts-images/revir_471092/471092_5.png')
+                .revirGallery__contentBox-mimopstruhovy
+                    .revirGallery__imageBox
+                        img.revirGallery__image.image-mimopstruhovy#6(src='../../districts-images/revir_471092/471092_6.png')
+        .revirGallery__description
+            nav.revirGallery__navigation
+                a.revirGallery__navigationItem(href="#tab_01") Popis revíru
+                a.revirGallery__navigationItem(href="#tab_02") Vlastnosti revíru
+            .revirGallery__tabs
+                #tab_01.revirGallery__tab
+                    | V roce 2021 – 2022 bude na tomto revíru probíhat revitalizace jezera. Lov ryb a přístup na přilehlé pozemky je po dobu stavby zakázán. V případě změn budou veškeré informace na www stránkách ČRS (www.rybsvaz-ms.cz), dále na informačních tabulích u revíru. Budou zde platit tyto podmínky:
+                    br
+                    | Celoroční zákaz lovu ryb platí v oploceném objektu sportovně rekreačního areálu, 50 m na každou stranu u vypouštěcích objektů – vyznačeno tabulemi.
+                    br
+                    | Ostrov je chráněnou oblastí vodního ptactva – lov ryb zakázán.
+                    br
+                    | Parkování vozidel je povolen minimálně 15 m od břehové hrany revíru a je přísný zákaz parkování na travnatých plochách, příjezd automobily k vodní ploše povolen pouze po zpevněných cestách.
+                    br
+                    | Na revíru je zakázáno označování lovných a krmných míst bójkami, zakázáno z důvodu rekreačního statutu vodní plochy.
+                    br
+                    | Při měření a fotografování ryb je nutno použít navlhčenou podložku.
+                    br
+                    | Na revíru je zakázáno stanování a umisťování obytných přívěsů, karavanů apod. Lovící, který bude pro přespání používat přístřešek nebo bivak je povinen mít v místě pobytu chemické WC, z důvodu udržení čistoty okolí. Každý lovící může mít pouze jeden bivak (přístřešek) a bude zabírat max. 3 metry břehové hrany. Po ukončení lovu bude neprodleně bivak (přístřešek) odstraněn. Platí přísný zákaz vylévání použitého chemického WC na revíru a na přilehlé pozemky.
+                    br
+                    | Úlovek amura bílého, štiky obecné a candáta obecného a jejich kombinace je omezen na 2 kusy měsíčně. Nejmenší míra nástražní rybičky je 25 cm, lov povolen pouze na celou rybičku.
+                #tab_02.revirGallery__tab
+                    | Číslo revíru: 471 092
+                    br
+                    | GPS 49°53'28.963"N, 18°10'40.179"E
+                    br
+                    | Rozloha revíru: 135 ha
+                    br
+                    | Typ revíru: mimopstruhový revír
+                    br
+                    | Uživatel revíru: Moravskoslezský ÚS
+                    br
+                    | Organizace pověřená hospodařením: MO Hlučín
+    .popup#popup
+        .popup__body
+            .popup__content
+                .popup__closeContainer
+                    a.popup__close(href="") X
+                img.popup__image(src='')

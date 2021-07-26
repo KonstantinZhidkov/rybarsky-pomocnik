@@ -168,12 +168,12 @@ body.lock {
     font-size: 24px;
     font-family: "SourceCodePro", sans-serif;
     text-decoration: none;
-    background-color: #e7e4e4;
+    background-color: rgb(213, 105, 50);
     color: #443726;
 }
 
 .revirGallery__navigationItem-active {
-    background-color: #19140c;
+    background-color: rgb(25, 56, 61);
     color: #e7e4e4;
 }
 
@@ -182,7 +182,7 @@ body.lock {
     font-size: 16px;
     line-height: 32px;
     letter-spacing: 1.4px;
-    background-color: #19140c;
+    background-image: linear-gradient(135deg, rgb(25, 56, 61) 60%, rgb(213, 105, 50));
     color: #e7e4e4;
     font-family: "Courgette", sans-serif;
     display: none;
@@ -190,6 +190,16 @@ body.lock {
 
 .revirGallery__tab-active {
     display: block;
+}
+
+.revirGallery__tab a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(213, 105, 50);
+}
+
+.revirGallery__tab a:hover {
+    text-decoration: underline;
 }
 
 /* Popup */
