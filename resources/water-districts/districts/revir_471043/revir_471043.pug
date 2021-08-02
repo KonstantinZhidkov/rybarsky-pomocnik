@@ -1,0 +1,92 @@
+extends ../../layout/main
+
+block variables
+    - var scriptSrc = 'revir_471043.js'
+
+block content
+    .galleryMargin
+    section.revirGallery
+        h2.revirGallery__header
+            span.revirGallery__headerItem(style="--i:1;") 4
+            span.revirGallery__headerItem(style="--i:2;") 7
+            span.revirGallery__headerItem(style="--i:3;") 1
+            span.revirGallery__headerItem(style="--i:4;") &nbsp;
+            span.revirGallery__headerItem(style="--i:5;") 0
+            span.revirGallery__headerItem(style="--i:6;") 4
+            span.revirGallery__headerItem(style="--i:7;") 3
+            span.revirGallery__headerItem(style="--i:8;") &nbsp;
+            span.revirGallery__headerItem(style="--i:9;") -
+            span.revirGallery__headerItem(style="--i:10;") &nbsp;
+            span.revirGallery__headerItem(style="--i:11;") L
+            span.revirGallery__headerItem(style="--i:12;") u
+            span.revirGallery__headerItem(style="--i:13;") č
+            span.revirGallery__headerItem(style="--i:14;") i
+            span.revirGallery__headerItem(style="--i:15;") n
+            span.revirGallery__headerItem(style="--i:16;") a
+            span.revirGallery__headerItem(style="--i:17;") &nbsp;
+            span.revirGallery__headerItem(style="--i:18;") 2
+            span.revirGallery__headerItem(style="--i:19;") &nbsp;
+            span.revirGallery__headerItem(style="--i:20;") A
+        h3.revirGallery__instruction Zvolte si úsek revíru na mapě:
+        .revirGallery__container-mimopstruhovy
+            .revirGallery__firstRow
+                .revirGallery__contentBox-mimopstruhovy
+                    .revirGallery__imageBox
+                        img.revirGallery__image.image-mimopstruhovy#1(src='../../districts-images/revir_471043/471043_1.png')
+                .revirGallery__contentBox-mimopstruhovy
+                    .revirGallery__imageBox
+                        img.revirGallery__image.image-mimopstruhovy#2(src='../../districts-images/revir_471043/471043_2.png')
+                .revirGallery__contentBox-mimopstruhovy
+                    .revirGallery__imageBox
+                        img.revirGallery__image.image-mimopstruhovy#3(src='../../districts-images/revir_471043/471043_3.png')
+            .revirGallery__secondRow
+                .revirGallery__contentBox-mimopstruhovy
+                    .revirGallery__imageBox
+                        img.revirGallery__image.image-mimopstruhovy#4(src='../../districts-images/revir_471043/471043_4.png')
+                .revirGallery__contentBox-mimopstruhovy
+                    .revirGallery__imageBox
+                        img.revirGallery__image.image-mimopstruhovy#5(src='../../districts-images/revir_471043/471043_5.png')
+                .revirGallery__contentBox-mimopstruhovy
+                    .revirGallery__imageBox
+                        img.revirGallery__image.image-mimopstruhovy#6(src='../../districts-images/revir_471043/471043_6.png')
+        .revirGallery__description
+            nav.revirGallery__navigation
+                a.revirGallery__navigationItem(href="#tab_01") Popis revíru
+                a.revirGallery__navigationItem(href="#tab_02") Vlastnosti revíru
+            .revirGallery__tabs
+                #tab_01.revirGallery__tab
+                    | Revír tvoří:
+                    br
+                    | údolní nádrž Žermanice v k. ú. Lučina 248 ha
+                    br
+                    | Od tělesa hráze k betonovému mostu přes řeku Lučinu v k.ú. Lučina na konci vzdutí nádrže.
+                    br
+                    | Zákaz lovu ryb v blízkosti hráze nádrže na obou březích – vyznačeno tabulemi.
+                    br
+                    | Úsek pod kostelem v Domaslavicích až k mostu přes řeku Lučinu je chráněn pro přirozený výtěr ryb – lov ryb zakázán – vyznačeno tabulemi.
+                    br
+                    | U rekreačního střediska OVaK Ostrava v k. ú. Dolní Domaslavice je v době od 1. 5. do 30. 9. zákaz lovu ryb na zpevněné části pozemku v délce 30 m – vyznačeno tabulemi.
+                    br
+                    | Na revíru je povoleno vyvážení návnad (krmivo) a od 16.6. vyvážení bójky k lovu dravých ryb dle BPVRP.
+                    br
+                    | Biologický rybník v k. ú. Lučina k revíru nepatří.
+                    br
+                    | Zákaz bivakování mimo povolenou denní dobu lovu (neplatí pro kempy a vymezená tábořiště).
+                #tab_02.revirGallery__tab
+                    | Číslo revíru: 471 043
+                    br
+                    | GPS 49°44'0.52"N, 18°26'54.268"E
+                    br
+                    | Rozloha revíru: 248 ha
+                    br
+                    | Typ revíru: mimopstruhový revír
+                    br
+                    | Uživatel revíru: Moravskoslezský ÚS
+                    br
+                    | Organizace pověřená hospodařením: MO Lučina
+    .popup#popup
+        .popup__body
+            .popup__content
+                .popup__closeContainer
+                    a.popup__close(href="") X
+                img.popup__image(src='')

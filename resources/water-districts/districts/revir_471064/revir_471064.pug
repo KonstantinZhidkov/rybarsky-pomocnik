@@ -1,0 +1,84 @@
+extends ../../layout/main
+
+block variables
+    - var scriptSrc = 'revir_471064.js'
+
+block content
+    .galleryMargin
+    section.revirGallery
+        h2.revirGallery__header
+            span.revirGallery__headerItem(style="--i:1;") 4
+            span.revirGallery__headerItem(style="--i:2;") 7
+            span.revirGallery__headerItem(style="--i:3;") 1
+            span.revirGallery__headerItem(style="--i:4;") &nbsp;
+            span.revirGallery__headerItem(style="--i:5;") 0
+            span.revirGallery__headerItem(style="--i:6;") 6
+            span.revirGallery__headerItem(style="--i:7;") 4
+            span.revirGallery__headerItem(style="--i:8;") &nbsp;
+            span.revirGallery__headerItem(style="--i:9;") -
+            span.revirGallery__headerItem(style="--i:10;") &nbsp;
+            span.revirGallery__headerItem(style="--i:11;") O
+            span.revirGallery__headerItem(style="--i:12;") d
+            span.revirGallery__headerItem(style="--i:13;") r
+            span.revirGallery__headerItem(style="--i:14;") a
+            span.revirGallery__headerItem(style="--i:15;") &nbsp;
+            span.revirGallery__headerItem(style="--i:16;") 1
+            span.revirGallery__headerItem(style="--i:17;") &nbsp;
+            span.revirGallery__headerItem(style="--i:18;") A
+        h3.revirGallery__instruction Zvolte si úsek revíru na mapě:
+        .revirGallery__container-mimopstruhovy
+            .revirGallery__firstRow
+                .revirGallery__contentBox-mimopstruhovy
+                    .revirGallery__imageBox
+                        img.revirGallery__image.image-mimopstruhovy#1(src='../../districts-images/revir_471064/471064_1.png')
+                .revirGallery__contentBox-mimopstruhovy
+                    .revirGallery__imageBox
+                        img.revirGallery__image.image-mimopstruhovy#2(src='../../districts-images/revir_471064/471064_2.png')
+                .revirGallery__contentBox-mimopstruhovy
+                    .revirGallery__imageBox
+                        img.revirGallery__image.image-mimopstruhovy#3(src='../../districts-images/revir_471064/471064_3.png')
+            .revirGallery__secondRow
+                .revirGallery__contentBox-mimopstruhovy
+                    .revirGallery__imageBox
+                        img.revirGallery__image.image-mimopstruhovy#4(src='../../districts-images/revir_471064/471064_4.png')
+                .revirGallery__contentBox-mimopstruhovy
+                    .revirGallery__imageBox
+                        img.revirGallery__image.image-mimopstruhovy#5(src='../../districts-images/revir_471064/471064_5.png')
+                .revirGallery__contentBox-mimopstruhovy
+                    .revirGallery__imageBox
+                        img.revirGallery__image.image-mimopstruhovy#6(src='../../districts-images/revir_471064/471064_6.png')
+        .revirGallery__description
+            nav.revirGallery__navigation
+                a.revirGallery__navigationItem(href="#tab_01") Popis revíru
+                a.revirGallery__navigationItem(href="#tab_02") Vlastnosti revíru
+            .revirGallery__tabs
+                #tab_01.revirGallery__tab
+                    | Revír tvoří:
+                    br
+                    | štěrkopískoviště v k. ú. Vrbice Pudlov 100,0 ha
+                    br
+                    | Lov ryb je celoročně zakázán v úseku od mola u vjezdu do areálu štěrkovny směrem vpravo až 30 m za čerpací stanici vody.
+                    br
+                    | Lov ryb z ostrova je celoročně zakázán.
+                    br
+                    | Revír je součástí ptačí oblasti Heřmanský stav-Poodří.
+                    br
+                    | Na revíru je zakázáno stanování a umisťování obytných přívěsů, karavanů apod. Lovící, který bude pro přespání používat přístřešek nebo bivak, je povinen mít v místě pobytu chemické WC – a to z důvodu udržení čistoty okolí. Platí přísný zákaz vylévání použitého chemického WC na revíru a na přilehlé pozemky. Každý lovící může mít pouze jeden bivak (přístřešek) a bude zabírat max. 3 metry břehové hrany. Po ukončení lovu bude neprodleně bivak (přístřešek) odstraněn.
+                #tab_02.revirGallery__tab
+                    | Číslo revíru: 471 064
+                    br
+                    | GPS 49°53'27.346"N, 18°19'28.007"E
+                    br
+                    | Rozloha revíru: 100 ha
+                    br
+                    | Typ revíru: mimopstruhový revír
+                    br
+                    | Uživatel revíru: Moravskoslezský ÚS
+                    br
+                    | Organizace pověřená hospodařením: MO Bohumín
+    .popup#popup
+        .popup__body
+            .popup__content
+                .popup__closeContainer
+                    a.popup__close(href="") X
+                img.popup__image(src='')

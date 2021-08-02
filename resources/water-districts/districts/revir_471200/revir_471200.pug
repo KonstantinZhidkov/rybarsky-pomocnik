@@ -1,0 +1,93 @@
+extends ../../layout/main
+
+block variables
+    - var scriptSrc = 'revir_471200.js'
+
+block content
+    .galleryMargin
+    section.revirGallery
+        h2.revirGallery__header
+            span.revirGallery__headerItem(style="--i:1;") 4
+            span.revirGallery__headerItem(style="--i:2;") 7
+            span.revirGallery__headerItem(style="--i:3;") 1
+            span.revirGallery__headerItem(style="--i:4;") &nbsp;
+            span.revirGallery__headerItem(style="--i:5;") 2
+            span.revirGallery__headerItem(style="--i:6;") 0
+            span.revirGallery__headerItem(style="--i:7;") 0
+            span.revirGallery__headerItem(style="--i:8;") &nbsp;
+            span.revirGallery__headerItem(style="--i:9;") -
+            span.revirGallery__headerItem(style="--i:10;") &nbsp;
+            span.revirGallery__headerItem(style="--i:11;") H
+            span.revirGallery__headerItem(style="--i:12;") a
+            span.revirGallery__headerItem(style="--i:13;") r
+            span.revirGallery__headerItem(style="--i:14;") t
+            span.revirGallery__headerItem(style="--i:15;") a
+            span.revirGallery__headerItem(style="--i:16;") &nbsp;
+            span.revirGallery__headerItem(style="--i:17;") 1
+            span.revirGallery__headerItem(style="--i:18;") &nbsp;
+            span.revirGallery__headerItem(style="--i:19;") A
+        h3.revirGallery__instruction Zvolte si úsek revíru na mapě:
+        .revirGallery__container
+            .revirGallery__contentBox
+                .revirGallery__imageBox
+                    img.revirGallery__image#1(src='../../districts-images/revir_471200/471200_1.png')
+            .revirGallery__contentBox
+                .revirGallery__imageBox
+                    img.revirGallery__image#2(src='../../districts-images/revir_471200/471200_2.png')
+            .revirGallery__contentBox
+                .revirGallery__imageBox
+                    img.revirGallery__image#3(src='../../districts-images/revir_471200/471200_3.png')
+            .revirGallery__contentBox
+                .revirGallery__imageBox
+                    img.revirGallery__image#4(src='../../districts-images/revir_471200/471200_4.png')
+            .revirGallery__contentBox
+                .revirGallery__imageBox
+                    img.revirGallery__image#5(src='../../districts-images/revir_471200/471200_5.png')
+            .revirGallery__contentBox
+                .revirGallery__imageBox
+                    img.revirGallery__image#6(src='../../districts-images/revir_471200/471200_6.png')
+        .revirGallery__description
+            nav.revirGallery__navigation
+                a.revirGallery__navigationItem(href="#tab_01") Popis revíru
+                a.revirGallery__navigationItem(href="#tab_02") Vlastnosti revíru
+            .revirGallery__tabs
+                #tab_01.revirGallery__tab
+                    | Revír tvoří:
+                    br
+                    | nádrž na Moravici, přítoku Opavy, Odry. Od tělesa hráze v ř. km 57,5 až po stupně na konci vzdutí v ř. km 74,4 v k. ú. Valšov a v ř. km 3,8 na Černém potoce v k. ú. Dlouhá Stráň.
+                    br
+                    | Přítoky nádrže Moravice, Kočovský potok a Černý potok nejsou součástí revíru. Ostatní přítoky jsou chráněnou rybí oblastí.
+                    br
+                    | Zákaz lovu ryb v úseku od hráze po obou březích – vyznačeno tabulemi na obou březích a u přítoků Moravice a Černý potok – vyznačeno tabulemi. Zákaz lovu je také pod obcí Nová pláň pod rybníkem – vyznačeno tabulemi.
+                    br
+                    | Lov ryb z plavidel, vyvážení návnad a nástrah povoleno mimo úseky se zákazem rybolovu. Při vyvážení návnad a nástrah a při lovu ryb z plavidla se nesmí lovící zdržovat ve vyznačené plavební dráze a mudí vzít na vědomí, že na hladině se pohybují plavidla správce nádrže, vodní záchranné služby a plavidla rekreační.
+                    br
+                    | Bójka smí být nastražena pouze tak, aby byla zachována nejméně vnitřní třetina vodní plochy volná pro plavbu, není-li stanoveno jinak.
+                    br
+                    | Nastražená bójka musí být po setmění osvětlena chemickým nebo elektrickým světlem.
+                    br
+                    | Za lov z plavidla se nepovažuje lov z loďky navalené na přirozený břeh.
+                    br
+                    | Lov ryb z ostrovů je zakázán.
+                    br
+                    | Lov čeřínkováním z plavidla je zakázán.
+                    br
+                    | Lovící jsou povinni uvolnit prostor při údržbě pobřežních porostů správcem vodního díla.
+                #tab_02.revirGallery__tab
+                    | Číslo revíru: 471 200
+                    br
+                    | GPS 49°53'27.468"N, 17°35'2.421"E
+                    br
+                    | Rozloha revíru: 900 ha
+                    br
+                    | Typ revíru: mimopstruhový revír
+                    br
+                    | Uživatel revíru: Moravskoslezský ÚS
+                    br
+                    | Organizace pověřená hospodařením: VÚS ČRS Ostrava
+    .popup#popup
+        .popup__body
+            .popup__content
+                .popup__closeContainer
+                    a.popup__close(href="") X
+                img.popup__image(src='')
