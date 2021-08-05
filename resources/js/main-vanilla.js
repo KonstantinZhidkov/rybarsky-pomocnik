@@ -133,7 +133,7 @@ function kompilator(param) {
 // Funkce, generujicí současné období
 
 function datumGenerator(param) {
-    const mesice = ["Ledena", "Února", "Březena", "Dubna", "Května", "Června", "Července", "Srpena", "Září", "Října", "Listopadu", "Prosince"];
+    const mesice = ["Ledena", "Února", "Březena", "Dubna", "Května", "Června", "Července", "Srpna", "Září", "Října", "Listopadu", "Prosince"];
     const dny = ["Pondělí", "Úterý", "Středa", "Čtvrtek", "Pátek", "Sobota", "Neděle"];
 
     let den = dny[param.getDay()];
